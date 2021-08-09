@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@900&display=swap');
+
+* { box-sizing: border-box; }
+
+html, body {
+    background: black;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+// TYPOGRAPHY
+
+h1 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 3rem;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    @media (min-width: 40rem) { font-size: 6rem; }
+}
+
+h2 {
+
+}
+
+p {
+    line-height: 1.4;
+}
+
+a { text-decoration: none; }
+
+// LAYOUT
+
+.container {
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    max-width: 96rem;
+    @media (min-width: 40rem) { padding: 0 3rem; }
+}
+
+.project {
+
+    @media (min-width: 40rem) {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: auto auto; 
+        gap: 2rem 2rem; 
+        grid-template-areas: 
+            "thumbnail thumbnail"
+            "title description";
+    }
+
+    .thumbnail {
+        grid-area: thumbnail;
+        position: relative;
+        display: block;
+        overflow: hidden;
+    
+        &:before {
+            display: block;
+            content: "";
+            width: 100%;
+            padding-top: 50%;
+        }
+    
+        > img {
+            position: absolute;
+            height: 100%;
+            top: 0;
+            transition: transform .8s cubic-bezier(0.1, 0.8, 0.2, 1);
+        }
+    
+        &:hover img { transform: scale(1.1, 1.1); }
+    }
+    
+    .title { grid-area: title; }
+    
+    .description { grid-area: description; }
+}
+
