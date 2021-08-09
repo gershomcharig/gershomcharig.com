@@ -1,7 +1,0 @@
-@mixin section-spacing {
-    padding-bottom: $space-xxl;
-
-    @media (min-width: $screen-md) {
-        padding-bottom: $space-xxxl;
-    }
-}
