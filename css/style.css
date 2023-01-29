@@ -1,15 +1,22 @@
 :root {
-  --primary-color: #19191a;
-  --secondary-color: #c6c4c2;
-  --bg-color: #f7f7f7;
+  --color-primary: #191919;
+  --color-secondary: #c5c5c5;
+  --color-background: #f7f7f7;
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--primary-color);
+  background-color: var(--color-background);
+  color: var(--color-primary);
   font-family: "Roboto Mono", monospace;
 }
 
 em {
   font-family: "Roboto Serif", serif;
+}
+
+nav,
+main,
+footer {
+  max-width: 40rem;
+  margin: 0 auto;
 }
