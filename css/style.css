@@ -2,7 +2,7 @@
   --color-primary: #222;
   --color-secondary: #999;
   --color-tertiary: #ddd;
-  --color-background: #f2f2f2;
+  --color-background: #f6f6f6;
 }
 
 html,
@@ -46,9 +46,9 @@ footer {
 
 p,
 ul {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 1.6;
   margin: 0 0 1.5rem 0;
 }
 
@@ -72,18 +72,32 @@ a:hover {
 }
 
 h1 {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
   font-weight: 700;
   margin: 0;
 }
 
 h2 {
-  font-size: 0.685rem;
-  line-height: 1rem;
+  font-size: 0.75rem;
+  line-height: 1;
   font-weight: 500;
   text-transform: uppercase;
   margin: 0 0 1.5rem 0;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+}
+
+small,
+.text--small {
+  font-size: 0.75rem;
+  line-height: 1.6;
+  margin: 0;
 }
 
 li {
@@ -93,4 +107,16 @@ li {
 .text--muted,
 .text--date {
   color: var(--color-secondary);
+}
+
+.article-link {
+  margin-right: 2rem;
+}
+
+#projects img {
+  border-radius: 4px;
+}
+
+#social ul {
+  display: flex;
 }
