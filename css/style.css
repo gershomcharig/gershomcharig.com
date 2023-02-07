@@ -104,17 +104,16 @@ li {
   margin-bottom: 1rem;
 }
 
-.text--muted,
-.text--date {
+.text--muted {
   color: var(--color-secondary);
-}
-
-.article-link {
-  margin-right: 2rem;
 }
 
 #projects img {
   border-radius: 4px;
+}
+
+.project-description {
+  float: right;
 }
 
 #social ul {
