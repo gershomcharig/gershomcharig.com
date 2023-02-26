@@ -109,6 +109,23 @@ li {
   color: var(--color-tertiary);
 }
 
+/* NAV */
+
+/* nav {
+  display: flex;
+  align-items: center;
+  grid-column-gap: 1rem;
+} */
+
+/* nav img {
+  position: fixed;
+  margin-left: -6rem;
+} */
+
+/* .name p {
+  margin-bottom: 0;
+} */
+
 /* SELECTED PROJECTS */
 
 .project__thumbnail {
