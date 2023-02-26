@@ -21,11 +21,11 @@
     </nav>
     <main>
       <section>
-        <h2><span class="text--muted">001</span> About</h2>
+        <h2><span class="text--disabled">001</span> About</h2>
         <p>
-          I’m a product designer based in London. I’ve worked for startups for
-          over 14 years, often as a funding member, helping them launch products
-          and scale. I use my expertise and vision to guide founders through the
+          I’m a product designer based in London. I’ve been helping startups
+          launch and scale products for over 14 years, often as a funding
+          member. I use my expertise and vision to guide founders through the
           process of visualising their ideas, discovering what to build,
           creating their first MVP, and finding
           <em>product-market fit</em>. Occasionally, I write about the founding
@@ -83,9 +83,10 @@
         </p>
       </section>
       <section>
-        <h2><span class="text--muted">003</span> Selected Projects</h2>
-        <article class="project">
+        <h2><span class="text--disabled">003</span> Selected Projects</h2>
+        <article>
           <img
+            class="project__thumbnail"
             src="/img/project-thumbnail-oaknorth-800.jpg"
             srcset="
               /img/project-thumbnail-oaknorth-400.jpg?width=400    400w,
@@ -100,7 +101,7 @@
           />
           <div class="project__content">
             <div class="project__title">
-              <h3>OakNorth</h3>
+              <p><strong>OakNorth</strong></p>
               <p class="text--small text--muted">2019-2021</p>
             </div>
             <p class="project__description">
@@ -109,8 +110,9 @@
             </p>
           </div>
         </article>
-        <article class="project">
+        <article>
           <img
+            class="project__thumbnail"
             src="/img/project-thumbnail-credimi-800.jpg"
             srcset="
               /img/project-thumbnail-credimi-400.jpg?width=400    400w,
@@ -125,7 +127,7 @@
           />
           <div class="project__content">
             <div class="project__title">
-              <h3>Credimi</h3>
+              <p><strong>Credimi</strong></p>
               <p class="text--small text--muted">2015-2018</p>
             </div>
             <p class="project__description">
@@ -135,8 +137,9 @@
             </p>
           </div>
         </article>
-        <article class="project">
+        <article>
           <img
+            class="project__thumbnail"
             src="/img/project-thumbnail-moneyfarm-800.jpg"
             srcset="
               /img/project-thumbnail-moneyfarm-400.jpg?width=400    400w,
@@ -151,7 +154,7 @@
           />
           <div class="project__content">
             <div class="project__title">
-              <h3>MoneyFarm</h3>
+              <p><strong>MoneyFarm</strong></p>
               <p class="text--small text--muted">2012-2015</p>
             </div>
             <p class="project__description">
@@ -160,8 +163,9 @@
             </p>
           </div>
         </article>
-        <article class="project">
+        <article>
           <img
+            class="project__thumbnail"
             src="/img/project-thumbnail-budjet-800.jpg"
             srcset="
               /img/project-thumbnail-budjet-400.jpg?width=400    400w,
@@ -176,7 +180,7 @@
           />
           <div class="project__content">
             <div class="project__title">
-              <h3>BudJet</h3>
+              <p><strong>BudJet</strong></p>
               <p class="text--small text--muted">2014-2015</p>
             </div>
             <p class="project__description">
@@ -187,65 +191,72 @@
         </article>
       </section>
       <section>
-        <h2><span class="text--muted">004</span> Work Experience</h2>
-        <ul class="employment-history">
-          <li>
-            <p class="employment__dates text--muted">2022–Now</p>
-            <div class="employment__details">
-              <h3>Pactio</h3>
-              <p class="text--small">Lead Product Designer, founding team</p>
-            </div>
-          </li>
-          <li>
-            <p class="employment__dates text--muted">2021–2022</p>
-            <div class="employment__details">
-              <h3>Palantir</h3>
-              <p class="text--small">Product Designer, business development</p>
-            </div>
-          </li>
-          <li>
-            <p class="employment__dates text--muted">2021</p>
-            <div class="employment__details">
-              <h3>Upside</h3>
-              <p class="text--small">Lead Product Designer, founding team</p>
-            </div>
-          </li>
-          <li>
-            <p class="employment__dates text--muted">2018–2021</p>
-            <div class="employment__details">
-              <h3>OakNorth</h3>
-              <p class="text--small">Senior Product Designer, first designer</p>
-            </div>
-          </li>
-          <li>
-            <p class="employment__dates text--muted">2015–2018</p>
-            <div class="employment__details">
-              <h3>Credimi</h3>
-              <p class="text--small">Lead Product Designer, founding team</p>
-            </div>
-          </li>
-          <li>
-            <p class="employment__dates text--muted">2012–2015</p>
-            <div class="employment__details">
-              <h3>MoneyFarm</h3>
-              <p class="text--small">Product Designer, founding team</p>
-            </div>
-          </li>
-          <li>
-            <p class="employment__dates text--muted">2009-2012</p>
-            <div class="employment__details">
-              <h3>Adverteaser</h3>
-              <p class="text--small">Graphic Designer</p>
-            </div>
-          </li>
-        </ul>
+        <h2><span class="text--disabled">004</span> Work Experience</h2>
+        <div class="employment">
+          <p class="employment__dates text--muted">2022–Now</p>
+          <div class="employment__details">
+            <p><strong>Pactio</strong></p>
+            <p class="text--small">Lead Product Designer, founding team</p>
+          </div>
+        </div>
+        <div class="employment">
+          <p class="employment__dates text--muted">2021–2022</p>
+          <div class="employment__details">
+            <p><strong>Palantir</strong></p>
+            <p class="text--small">Product Designer, business development</p>
+          </div>
+        </div>
+        <div class="employment">
+          <p class="employment__dates text--muted">2021</p>
+          <div class="employment__details">
+            <p><strong>Upside</strong></p>
+            <p class="text--small">Lead Product Designer, founding team</p>
+          </div>
+        </div>
+        <div class="employment">
+          <p class="employment__dates text--muted">2018–2021</p>
+          <div class="employment__details">
+            <p><strong>OakNorth</strong></p>
+            <p class="text--small">Senior Product Designer, first designer</p>
+          </div>
+        </div>
+        <div class="employment">
+          <p class="employment__dates text--muted">2015–2018</p>
+          <div class="employment__details">
+            <p><strong>Credimi</strong></p>
+            <p class="text--small">Lead Product Designer, founding team</p>
+          </div>
+        </div>
+        <div class="employment">
+          <p class="employment__dates text--muted">2012–2015</p>
+          <div class="employment__details">
+            <p><strong>MoneyFarm</strong></p>
+            <p class="text--small">Product Designer, founding team</p>
+          </div>
+        </div>
+        <div class="employment">
+          <p class="employment__dates text--muted">2009-2012</p>
+          <div class="employment__details">
+            <p><strong>Adverteaser</strong></p>
+            <p class="text--small">Graphic Designer</p>
+          </div>
+        </div>
       </section>
       <section>
-        <h2><span class="text--muted">005</span> Social</h2>
+        <h2><span class="text--disabled">005</span> Social</h2>
         <div class="social-links">
-          <a href="">Twitter</a>
-          <a href="">LinkedIn</a>
-          <a href="">Instagram</a>
+          <a class="div1" href="">
+            <img src="/img/twitter.svg" width="24px" height="auto" />
+            <p class="text--small"><strong>Twitter</strong></p>
+          </a>
+          <a class="div1" href="">
+            <img src="/img/linkedin.svg" width="24px" height="auto" />
+            <p class="text--small"><strong>LinkedIn</strong></p>
+          </a>
+          <a class="div1" href="">
+            <img src="/img/instagram.svg" width="24px" height="auto" />
+            <p class="text--small"><strong>Instagram</strong></p>
+          </a>
         </div>
       </section>
     </main>
