@@ -59,7 +59,7 @@ img {
 }
 
 .flex-fill {
-  flex-grow: 1;
+  flex: 1;
 }
 
 .dotted-divider {
@@ -306,4 +306,30 @@ nav {
   overflow: hidden;
   border-radius: 8px;
   border: rgba(0, 0, 0, 0.05) 1px solid;
+  background: var(--color-ui-6);
+}
+
+/* JOURNAL */
+
+.journal-entry {
+  display: flex;
+  column-gap: 16px;
+  align-items: flex-start;
+}
+
+.article__thumbnail {
+  width: 200px;
+  aspect-ratio: 3 / 2;
+}
+
+@media only screen and (max-width: 520px) {
+  .article__thumbnail {
+    width: 140px;
+  }
+}
+
+.article__text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
