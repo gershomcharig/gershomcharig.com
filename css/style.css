@@ -7,6 +7,7 @@
   --color-ui-6: #fafaf9; /* tw-stone-50 */
   --color-accent: #3b82f6; /* tw-blue-500 */
   --color-brand: #ffc845;
+  --animate-delay: 0.5s; /* overrides animate.css */
 }
 
 /* LAYOUT */
@@ -29,7 +30,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 80px;
+  row-gap: 80px;
 }
 
 img {
@@ -47,14 +48,14 @@ img {
 }
 
 .row-gap--lg {
-  gap: 24px;
+  row-gap: 24px;
 }
 .row-gap--md {
-  gap: 16px;
+  row-gap: 16px;
 }
 
 .row-gap--sm {
-  gap: 8px;
+  row-gap: 8px;
 }
 
 .flex-fill {
@@ -71,7 +72,7 @@ img {
   padding: 16px;
   border-radius: 12px;
   text-decoration: none;
-  transition: background ease 150ms;
+  transition: background ease 150ms, color ease 150ms;
 }
 
 .ghost-card:hover {
@@ -124,29 +125,41 @@ body {
   font-family: "iA Writer Duospace", monospace;
 }
 
-p {
+p,
+h2,
+a {
   font-size: 16px;
   line-height: 1.75; /* 28px*/
   margin: 0;
 }
 
+@media only screen and (max-width: 400px) {
+  p,
+  h2,
+  a {
+    font-size: 14px;
+  }
+}
+
 h2 {
-  font-size: 16px;
-  line-height: 1.75; /* 28px*/
   font-weight: bold;
-  margin: 0;
 }
 
 a {
   color: var(--color-ui-1);
   text-decoration: underline var(--color-accent) 2px;
   text-underline-offset: 3px;
+  transition: color ease 150ms;
 }
 
 a:hover {
   color: var(--color-accent);
   text-decoration: underline var(--color-accent) 2px;
   text-underline-offset: 3px;
+}
+
+.text--default {
+  color: var(--color-ui-1);
 }
 
 .text--muted {
@@ -170,7 +183,7 @@ nav {
 
 .navbar {
   display: flex;
-  gap: 4px;
+  column-gap: 4px;
   padding: 4px;
   border-radius: 999px;
   margin-bottom: 16px;
@@ -213,17 +226,13 @@ nav {
 .employment {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  column-gap: 16px;
   text-decoration: none;
+  transition: color ease 150ms;
 }
 
 .employment:hover {
-  color: var(--color-ui-1);
   text-decoration: none;
-}
-
-.employment:hover :first-child {
-  color: var(--color-accent);
 }
 
 @media only screen and (max-width: 480px) {
@@ -254,6 +263,7 @@ nav {
   border-radius: 8px;
   box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.05);
   text-decoration: none;
+  transition: background ease 150ms, color ease 150ms;
 }
 
 .social-links a p {
