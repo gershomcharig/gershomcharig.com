@@ -7,7 +7,7 @@
   --color-ui-6: #fafaf9; /* tw-stone-50 */
   --color-accent: #3b82f6; /* tw-blue-500 */
   --color-brand: #ffc845;
-  --animate-delay: 0.5s; /* overrides animate.css */
+  --animate-delay: 0.5s; /* override animate.css */
 }
 
 /* LAYOUT */
@@ -133,14 +133,25 @@ a {
   margin: 0;
 }
 
+h1 {
+  font-size: 24px;
+  line-height: 1.25; /* 30px*/
+  margin: 0;
+}
+
 @media only screen and (max-width: 400px) {
   p,
   h2,
   a {
     font-size: 14px;
   }
+
+  h1 {
+    font-size: 20px;
+  }
 }
 
+h1,
 h2 {
   font-weight: bold;
 }
@@ -168,6 +179,14 @@ a:hover {
 
 .text--disabled {
   color: var(--color-ui-3);
+}
+
+.text--no-decoration {
+  text-decoration: none;
+}
+
+.text--no-decoration:hover {
+  text-decoration: none;
 }
 
 /* NAVBAR */
@@ -332,4 +351,16 @@ nav {
   display: flex;
   flex-direction: column;
   flex: 1;
+}
+
+/* JOURNAL ENTRY */
+
+.image-placeholder {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  border-radius: 8px;
+  border: rgba(0, 0, 0, 0.05) 1px solid;
+  background: var(--color-ui-6);
+  margin-block: 40px;
 }
