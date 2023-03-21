@@ -10,10 +10,10 @@
   <body>
     <nav>
       <div class="navbar">
-        <a class="active" href="#">About</a>
-        <a class="" href="#">Work</a>
-        <a class="" href="#">Journal</a>
-        <a class="" href="#">Contact</a>
+        <a class="" href="/">About</a>
+        <a class="" href="/work.html">Work</a>
+        <a class="" href="/journal.html">Journal</a>
+        <a class="" href="mailto:hello@gershomcharig.com">Contact</a>
       </div>
     </nav>
     <main>
@@ -21,122 +21,113 @@
         ><img src="/img/profile-pic.svg" width="72px" height="72px"
       /></a>
 
-      <section class="vstack row-gap--lg alignment-padding">
-        <h2 class="text--muted">
+      <section class="vstack row-gap--sm">
+        <h2 class="text--muted alignment-padding">
           <span class="text--disabled">/</span>selected<span
             class="text--disabled"
             >_</span
           >projects
         </h2>
+        <div class="vstack row-gap--sm">
+          <a class="ghost-card vstack row-gap--md" href="#">
+            <div class="thumbnail">
+              <img
+                src="/img/project-thumbnail-oaknorth-800.jpg"
+                srcset="
+                  /img/project-thumbnail-oaknorth-400.jpg?width=400    400w,
+                  /img/project-thumbnail-oaknorth-800.jpg?width=800    800w,
+                  /img/project-thumbnail-oaknorth-1200.jpg?width=1200 1200w,
+                  /img/project-thumbnail-oaknorth-1600.jpg?width=1600 1600w
+                "
+                width="100%"
+                height="auto"
+                loading="lazy"
+                alt="Abstract representation of OakNorth's interface"
+              />
+            </div>
+            <p class="">
+              <strong>OakNorth.</strong
+              ><span class="text--muted">
+                A platform that assists financial institutions with data-driven
+                solutions for credit analysis and monitoring.</span
+              >
+            </p>
+          </a>
+          <a class="ghost-card vstack row-gap--md" href="#">
+            <div class="thumbnail">
+              <img
+                src="/img/project-thumbnail-credimi-800.jpg"
+                srcset="
+                  /img/project-thumbnail-credimi-400.jpg?width=400    400w,
+                  /img/project-thumbnail-credimi-800.jpg?width=800    800w,
+                  /img/project-thumbnail-credimi-1200.jpg?width=1200 1200w,
+                  /img/project-thumbnail-credimi-1600.jpg?width=1600 1600w
+                "
+                width="100%"
+                height="auto"
+                loading="lazy"
+                alt="Abstract representation of Credimi's interface"
+              />
+            </div>
+            <p>
+              <strong>Credimi.</strong
+              ><span class="text--muted">
+                A digital lending platform that allows SMEs to easily optimise
+                working capital and cash flow by turning outstanding invoices
+                into cash.</span
+              >
+            </p>
+          </a>
+          <a class="ghost-card vstack row-gap--md" href="#">
+            <div class="thumbnail">
+              <img
+                src="/img/project-thumbnail-moneyfarm-800.jpg"
+                srcset="
+                  /img/project-thumbnail-moneyfarm-400.jpg?width=400    400w,
+                  /img/project-thumbnail-moneyfarm-800.jpg?width=800    800w,
+                  /img/project-thumbnail-moneyfarm-1200.jpg?width=1200 1200w,
+                  /img/project-thumbnail-moneyfarm-1600.jpg?width=1600 1600w
+                "
+                width="100%"
+                height="auto"
+                loading="lazy"
+                alt="MoneyFarm's mobile interface"
+              />
+            </div>
+            <p>
+              <strong>MoneyFarm.</strong
+              ><span class="text--muted">
+                Helping people improve their financial wellbeing by making
+                personal investing simple and accessible through technology.
+              </span>
+            </p>
+          </a>
+          <a class="ghost-card vstack row-gap--md" href="#">
+            <div class="thumbnail">
+              <img
+                src="/img/project-thumbnail-budjet-800.jpg"
+                srcset="
+                  /img/project-thumbnail-budjet-400.jpg?width=400    400w,
+                  /img/project-thumbnail-budjet-800.jpg?width=800    800w,
+                  /img/project-thumbnail-budjet-1200.jpg?width=1200 1200w,
+                  /img/project-thumbnail-budjet-1600.jpg?width=1600 1600w
+                "
+                width="100%"
+                height="auto"
+                loading="lazy"
+                alt="BudJet's mobile interface"
+              />
+            </div>
+            <p>
+              <strong>BudJet.</strong
+              ><span class="text--muted">
+                An iOS app that keeps track of your expenses and allows you to
+                achieve your saving goals faster.</span
+              >
+            </p>
+          </a>
+        </div>
       </section>
-      <!-- <section>
-        <h2><span class="text--disabled">003</span> Selected Projects</h2>
-        <article>
-          <img
-            class="project__thumbnail"
-            src="/img/project-thumbnail-oaknorth-800.jpg"
-            srcset="
-              /img/project-thumbnail-oaknorth-400.jpg?width=400    400w,
-              /img/project-thumbnail-oaknorth-800.jpg?width=800    800w,
-              /img/project-thumbnail-oaknorth-1200.jpg?width=1200 1200w,
-              /img/project-thumbnail-oaknorth-1600.jpg?width=1600 1600w
-            "
-            width="100%"
-            height="auto"
-            loading="lazy"
-            alt="Abstract representation of OakNorth's interface"
-          />
-          <div class="project__content">
-            <div class="project__title">
-              <p><strong>OakNorth</strong></p>
-              <p class="text--small text--muted">2019-2021</p>
-            </div>
-            <p class="project__description">
-              A platform that assists financial institutions with data-driven
-              solutions for credit analysis and monitoring.
-            </p>
-          </div>
-        </article>
-        <article>
-          <img
-            class="project__thumbnail"
-            src="/img/project-thumbnail-credimi-800.jpg"
-            srcset="
-              /img/project-thumbnail-credimi-400.jpg?width=400    400w,
-              /img/project-thumbnail-credimi-800.jpg?width=800    800w,
-              /img/project-thumbnail-credimi-1200.jpg?width=1200 1200w,
-              /img/project-thumbnail-credimi-1600.jpg?width=1600 1600w
-            "
-            width="100%"
-            height="auto"
-            loading="lazy"
-            alt="Abstract representation of Credimi's interface"
-          />
-          <div class="project__content">
-            <div class="project__title">
-              <p><strong>Credimi</strong></p>
-              <p class="text--small text--muted">2015-2018</p>
-            </div>
-            <p class="project__description">
-              A digital lending platform that allows SMEs to easily optimise
-              working capital and cash flow by turning outstanding invoices into
-              cash.
-            </p>
-          </div>
-        </article>
-        <article>
-          <img
-            class="project__thumbnail"
-            src="/img/project-thumbnail-moneyfarm-800.jpg"
-            srcset="
-              /img/project-thumbnail-moneyfarm-400.jpg?width=400    400w,
-              /img/project-thumbnail-moneyfarm-800.jpg?width=800    800w,
-              /img/project-thumbnail-moneyfarm-1200.jpg?width=1200 1200w,
-              /img/project-thumbnail-moneyfarm-1600.jpg?width=1600 1600w
-            "
-            width="100%"
-            height="auto"
-            loading="lazy"
-            alt="MoneyFarm's mobile interface"
-          />
-          <div class="project__content">
-            <div class="project__title">
-              <p><strong>MoneyFarm</strong></p>
-              <p class="text--small text--muted">2012-2015</p>
-            </div>
-            <p class="project__description">
-              Helping people improve their financial wellbeing by making
-              personal investing simple and accessible through technology.
-            </p>
-          </div>
-        </article>
-        <article>
-          <img
-            class="project__thumbnail"
-            src="/img/project-thumbnail-budjet-800.jpg"
-            srcset="
-              /img/project-thumbnail-budjet-400.jpg?width=400    400w,
-              /img/project-thumbnail-budjet-800.jpg?width=800    800w,
-              /img/project-thumbnail-budjet-1200.jpg?width=1200 1200w,
-              /img/project-thumbnail-budjet-1600.jpg?width=1600 1600w
-            "
-            width="100%"
-            height="auto"
-            loading="lazy"
-            alt="BudJet's mobile interface"
-          />
-          <div class="project__content">
-            <div class="project__title">
-              <p><strong>BudJet</strong></p>
-              <p class="text--small text--muted">2014-2015</p>
-            </div>
-            <p class="project__description">
-              An iOS app that keeps track of your expenses and allows you to
-              achieve your saving goals faster.
-            </p>
-          </div>
-        </article>
-      </section> -->
     </main>
   </body>
 </html>
