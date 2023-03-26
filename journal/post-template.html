@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WLSW9SLES6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-WLSW9SLES6");
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Journal</title>
+    <title>Post template</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -21,9 +36,11 @@
       </div>
     </nav>
     <main class="animate__animated animate__fadeIn">
-      <a class="alignment-padding" rel="prerender" href="/"
-        ><img src="/img/profile-pic.svg" width="72px" height="72px"
-      /></a>
+      <div class="vstack alignment-padding">
+        <a rel="prerender" href="/"
+          ><img src="/img/profile-pic.svg" width="72px" height="72px"
+        /></a>
+      </div>
 
       <header class="alignment-padding vstack row-gap--sm">
         <a class="text--no-decoration" rel="prerender" href="/journal.html"
@@ -56,9 +73,22 @@
         </p>
       </div>
       <div class="vstack row-gap--sm">
-        <p class="text--muted alignment-padding">
-          You may also find interesting...
-        </p>
+        <p class="text--muted alignment-padding">Next</p>
+        <a
+          class="ghost-card journal-entry"
+          rel="prerender"
+          href="/journal/post-template.html"
+        >
+          <div class="thumbnail article__thumbnail"></div>
+          <div class="article__text">
+            <p><strong>Lorem ipsum dolor sit amet</strong></p>
+            <p class="text--muted">
+              Quis excepteur veniam commodo nulla ut eu nostrud aute laboris
+              minim. Tempor labore laboris excepteur officia enim enim.
+            </p>
+          </div>
+        </a>
+        <p class="text--muted alignment-padding">Previous</p>
         <a
           class="ghost-card journal-entry"
           rel="prerender"

@@ -44,7 +44,7 @@ img {
 .vstack {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: flex-start;
 }
 
 .row-gap--lg {
@@ -58,11 +58,12 @@ img {
   row-gap: 8px;
 }
 
-.flex-fill {
-  flex: 1;
+.flex-stretch {
+  align-self: stretch;
 }
 
 .dotted-divider {
+  flex: 1;
   margin-top: auto;
   margin-bottom: 7px;
   border-bottom: var(--color-ui-3) 2px dotted;
@@ -337,13 +338,13 @@ nav {
 }
 
 .article__thumbnail {
-  width: 200px;
+  flex-basis: 200px;
   aspect-ratio: 3 / 2;
 }
 
 @media only screen and (max-width: 520px) {
   .article__thumbnail {
-    width: 140px;
+    flex-basis: 140px;
   }
 }
 

@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WLSW9SLES6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-WLSW9SLES6");
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -9,7 +24,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <nav>
@@ -21,9 +36,11 @@
       </div>
     </nav>
     <main class="animate__animated animate__fadeIn">
-      <a class="alignment-padding" rel="prerender" href="/"
-        ><img src="/img/profile-pic.svg" width="72px" height="72px"
-      /></a>
+      <div class="vstack alignment-padding">
+        <a rel="prerender" href="/"
+          ><img src="/img/profile-pic.svg" width="72px" height="72px"
+        /></a>
+      </div>
 
       <section class="vstack row-gap--sm">
         <h2 class="text--muted alignment-padding">
