@@ -1,0 +1,97 @@
+---
+layout: layouts/base.njk
+eleventyNavigation:
+  key: home
+  order: 1
+numberOfLatestPostsToShow: 3
+---
+<section class="home-section">
+	<h1>Bio</h1>
+	<p>
+		I'm a founding designer with over 15 years of experience in fast-growing startups. I use my expertise and vision to help founders visualise their ideas, create their first MVP, and find product-market fit.
+	</p>
+	<p>
+		Before becoming head of design and a founding member at <a href="https://www.pactio.io/" target="_blank">Pactio</a>, I was part of <a href="https://www.palantir.com/" target="_blank">Palantir</a>'s business development team, where I contributed to the launch of 29 new commercial initiatives. So far, I've been the founding designer of five different startups.
+	</p>
+	<p>
+		Outside of my daily job, I offer advice to founders who need help with their MVP or product strategy. I also <a href="/blog/"> write</a> about design, technology and other interesting things.
+	</p>
+	<h3>Contacts</h3>
+	<ul>
+		<li>Email: <a href="mailto:hello@gershomcharig.com">hello@gershomcharig.com</a></li>
+		<li>Twitter: <a href="https://twitter.com/GershomCharig" target="_blank">@GershomCharig</a></li>
+		<li>Instagram: <a href="https://www.instagram.com/gershomcharig/" target="_blank">@gershomcharig</a></li>
+		<li>LinkedIn: <a href="https://www.linkedin.com/in/gershomcharig/" target="_blank">@gershomcharig</a></li>
+	</ul>
+</section>
+
+<section class="home-section">
+	{% set postsCount = collections.posts | length %}
+	{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
+	<h1>Recent posts</h1>
+
+	{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
+	{% set postslistCounter = postsCount %}
+	{% include "postslist.njk" %}
+
+	{% set morePosts = postsCount - numberOfLatestPostsToShow %}
+	{% if morePosts > 0 %}
+	<p><a href="/blog/">See all posts →</a></p>
+	{% endif %}
+</section>
+
+<section class="home-section">
+	<h1>Case studies</h1>
+	<ul class="postlist">
+		<li class="postlist-item">
+			<a href="https://www.figma.com/proto/kpd75cp2Z6MGg2ZAKsqLpq/Gershom-Charig's-Portfolio?page-id=0%3A1&node-id=2%3A1092&viewport=241%2C48%2C0.72&scaling=contain&starting-point-node-id=2%3A1092&hotspot-hints=0&hide-ui=1" class="postlist-link" target="blank">OakNorth ↗</a>
+			<span class="postlist-date">A platform that assists financial institutions with data-driven solutions for credit analysis and monitoring.</span>
+		</li>
+		<li class="postlist-item">
+			<a href="https://www.figma.com/proto/kpd75cp2Z6MGg2ZAKsqLpq/Gershom-Charig's-Portfolio?page-id=2%3A8421&node-id=2%3A10848&viewport=241%2C48%2C0.62&scaling=contain&starting-point-node-id=2%3A10848&hotspot-hints=0&hide-ui=1" class="postlist-link" target="blank">Credimi ↗</a>
+			<span class="postlist-date">A digital lending platform that allows SMEs to easily optimise working capital and cash flow by turning outstanding invoices into cash.</span>
+		</li>
+		<li class="postlist-item">
+			<a href="https://www.figma.com/proto/kpd75cp2Z6MGg2ZAKsqLpq/Gershom-Charig's-Portfolio?page-id=2%3A11537&node-id=2%3A11981&viewport=241%2C48%2C0.43&scaling=contain&starting-point-node-id=2%3A11981&hotspot-hints=0&hide-ui=1" class="postlist-link" target="blank">MoneyFarm ↗</a>
+			<span class="postlist-date">Helping people improve their financial wellbeing by making personal investing simple and accessible through technology.</span>
+		</li>
+		<li class="postlist-item">
+			<a href="https://www.figma.com/proto/kpd75cp2Z6MGg2ZAKsqLpq/Gershom-Charig's-Portfolio?page-id=2%3A12089&node-id=2%3A12339&viewport=241%2C48%2C0.46&scaling=contain&starting-point-node-id=2%3A12339&hotspot-hints=0&hide-ui=1" class="postlist-link" target="blank">BudJet ↗</a>
+			<span class="postlist-date">An iOS app that keeps track of your expenses and allows you to achieve your saving goals faster.</span>
+		</li>
+	</ul>
+</section>
+
+<section class="home-section">
+	<h1>Work experience</h1>
+	<ul class="postlist">
+		<li class="postlist-item">
+			<a href="https://www.pactio.io/" class="postlist-link" target="blank">Pactio ↗</a>
+			<span class="postlist-date">Head of design, Founding designer &bull; 2022 - present</span>
+		</li>
+		<li class="postlist-item">
+			<a href="https://www.palantir.com/" class="postlist-link" target="blank">Palantir ↗</a>
+			<span class="postlist-date">Capture designer &bull; 2021 - 2022</span>
+		</li>
+		<li class="postlist-item">
+			<a href="https://www.upsidetechnology.co/" class="postlist-link" target="blank">Upside Technology ↗</a>
+			<span class="postlist-date">Founding designer &bull; 2021</span>
+		</li>
+		<li class="postlist-item">
+			<a href="https://www.onci.com/" class="postlist-link" target="blank">OakNorth ↗</a>
+			<span class="postlist-date">Senior product designer &bull; 2018 - 2021</span>
+		</li>
+		<li class="postlist-item">
+			<a href="https://www.credimi.com/" class="postlist-link" target="blank">Credimi ↗</a>
+			<span class="postlist-date">Founding designer &bull; 2015 - 2018</span>
+		</li>
+		<li class="postlist-item">
+			<a href="https://www.moneyfarm.com/" class="postlist-link" target="blank">MoneyFarm ↗</a>
+			<span class="postlist-date">Founding designer &bull; 2012 - 2015</span>
+		</li>
+		<li class="postlist-item">
+			<a href="https://www.adverteaser.com/" class="postlist-link" target="blank">Adverteaser ↗</a>
+			<span class="postlist-date">Graphic designer &bull; 2009 - 2012</span>
+		</li>
+	</ul>
+</section>
