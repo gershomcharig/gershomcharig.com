@@ -1,20 +1,16 @@
 ---
 title: How to (not) build a blog in 2024
-description: This is a post on My Blog about leveraging agile frameworks.
+description: I stopped making excuses and published my first post before I even had a blog.
 date: 2024-03-08
+tags:
+  - Personal update
 ---
 
-**Edited on March 28, 2024:** This post was originally published as a simple HTML file with no style sheet. You can see a screenshot [here](/img/How-to-not-build-a-blog-in-2024-original.png).
+**Edited on March 28, 2024:** This post was originally published as a plain HTML file with no stylesheet, which means that most of the references included in it no longer make sense. You can see a screenshot of the original post [here](/img/How-to-not-build-a-blog-in-2024-original.png).
 
-<div style="background-color: #eee; padding: 0.25em 1em; margin-top: 1em;">
-  <p>
-    <strong>TL;DR</strong>
-  </p>
-  <ul>
-    <li>My website finally has a blog (kind of).</li>
-    <li>It looks awful right now, but for a good reason.</li>
-    <li>You might like this blog.</li>
-  </ul>
+<div style="background-color: #eee; padding: 1em; margin-top: 1em;">
+  <h3>TL;DR</h3>
+  <p>After years of contemplating adding a blog to my website, I finally stopped making excuses and published my first post as a plain HTML file with no stylesheet.</p>
 </div>
 
 According to the Wayback Machine, I've been the proud owner of this domain [since 2012](https://web.archive.org/web/20120220231348/http://www.gershomcharig.com/). It's been my trusty design portfolio, but in a certain way, more akin to a chronicle of my haircuts: neglected most of the time, it would receive a visual refresh every time I started looking around for a new job and needed to impress potential employers. In its various iterations, it would usually feature a short bio, some snapshots of my best work (now shamelessly replaced by a few links to Figma prototypes), and a "Contact" button. It has served me well so far, but I've always cultivated the idea of this being something more than just a portfolio. I wanted this to be a place where I could express myself. Unfortunately, I'm so lazy that I've been tinkering with this idea _for years_... Until now.
