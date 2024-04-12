@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+/* Tokens */
+:root {
+  /* Fluid type scale */
+  --step--2: clamp(0.6944rem, 0.2671rem + 0.6677vi, 0.8681rem);
+  --step--1: clamp(0.8333rem, 0.3205rem + 0.8013vi, 1.0417rem);
+  --step-0: clamp(1rem, 0.3846rem + 0.9615vi, 1.25rem);
+  --step-1: clamp(1.2rem, 0.4615rem + 1.1538vi, 1.5rem);
+  --step-2: clamp(1.44rem, 0.5538rem + 1.3846vi, 1.8rem);
+  --step-3: clamp(1.728rem, 0.6646rem + 1.6615vi, 2.16rem);
+  --step-4: clamp(2.0736rem, 0.7975rem + 1.9938vi, 2.592rem);
+  --step-5: clamp(2.4883rem, 0.957rem + 2.3926vi, 3.1104rem);
+
+  /* Fluid space scale */
+  --space-3xs: clamp(0.25rem, 0.0962rem + 0.2404vi, 0.3125rem);
+  --space-2xs: clamp(0.5rem, 0.1923rem + 0.4808vi, 0.625rem);
+  --space-xs: clamp(0.75rem, 0.2885rem + 0.7212vi, 0.9375rem);
+  --space-s: clamp(1rem, 0.3846rem + 0.9615vi, 1.25rem);
+  --space-m: clamp(1.5rem, 0.5769rem + 1.4423vi, 1.875rem);
+  --space-l: clamp(2rem, 0.7692rem + 1.9231vi, 2.5rem);
+  --space-xl: clamp(3rem, 1.1538rem + 2.8846vi, 3.75rem);
+  --space-2xl: clamp(4rem, 1.5385rem + 3.8462vi, 5rem);
+  --space-3xl: clamp(6rem, 2.3077rem + 5.7692vi, 7.5rem);
+
+  /* Colours */
+}
+
+/* Typography */
+body {
+  font-family: "Roboto Mono", "Courier New", Courier, monospace;
+}
