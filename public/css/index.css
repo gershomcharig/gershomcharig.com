@@ -296,3 +296,9 @@ h2 + .header-anchor {
 hr {
   margin: 3em 0;
 }
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
