@@ -24,9 +24,52 @@
   --space-3xl: clamp(6rem, 2.3077rem + 5.7692vi, 7.5rem);
 
   /* Colours */
+  --gc-yellow: #ffc845;
+  --black: #000000;
+  --white: #ffffff;
 }
 
 /* Typography */
 body {
   font-family: "Roboto Mono", "Courier New", Courier, monospace;
+  font-size: var(--step-0);
+}
+
+/* Layout */
+
+.visually-hidden {
+  /* https://www.a11yproject.com/posts/how-to-hide-content/ */
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 100px solid #ffc845;
+}
+
+/* Navigation */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 60rem;
+  /* padding-inline: var(--space-s); */
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
