@@ -4,7 +4,7 @@ description: I stopped making excuses and published my first post before I even 
 date: 2024-03-08
 tags:
   - Personal update
-cover: /img/How-to-not-build-a-blog-in-2024-original.png
+cover: https://www.gershomcharig.com/img/How-to-not-build-a-blog-in-2024-original.png
 ---
 
 **Edited on March 28, 2024:** This post was originally published as a plain HTML file with no stylesheet, which means that most of the references included in it no longer make sense. You can see a screenshot of the original post [here](/img/How-to-not-build-a-blog-in-2024-original.png).
