@@ -8,4 +8,5 @@ module.exports = {
     email: "hello@gershomcharig.com",
     url: "https://www.gershomcharig.com/",
   },
+  cover: "/img/open-graph.png",
 };
