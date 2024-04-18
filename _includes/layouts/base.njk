@@ -50,18 +50,18 @@
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
 				{%- for entry in collections.all | eleventyNavigation %}
-					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
-					<li>/</li>
+					<li><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+					<li class="text-disabled">/</li>
 				{%- endfor %}
-				<li class="nav-item"><a href="mailto:hello@gershomcharig.com">email</a></li>
+				<li><a href="mailto:hello@gershomcharig.com">email</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<main id="skip">
-			<div class="message-box">
+			{# <div class="message-box">
 				<p><em>I'm redesigning this website from the ground up. I'm doing it in the open, so some stuff might look a bit off.</em> — Gershom</p>
-			</div>
+			</div> #}
 			{{ content | safe }}
 		</main>
 
