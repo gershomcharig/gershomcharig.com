@@ -43,7 +43,7 @@
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
 		<header>
-			<a href="/" class="home-link">Gershom Charig</a>
+			<a href="/" class="logo"><img src="/img/profile-pic.svg"></a>
 
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
 			<nav>
@@ -51,6 +51,7 @@
 				<ul class="nav">
 				{%- for entry in collections.all | eleventyNavigation %}
 					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+					<li>/</li>
 				{%- endfor %}
 				<li class="nav-item"><a href="mailto:hello@gershomcharig.com">email</a></li>
 				</ul>
@@ -64,7 +65,7 @@
 			{{ content | safe }}
 		</main>
 
-		<footer></footer>
+		<footer>Footer :)</footer>
 
 	</body>
 </html>
