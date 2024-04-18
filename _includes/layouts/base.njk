@@ -10,6 +10,22 @@
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
 
+		{#- Open graph #}
+		<meta property="og:title" content="{{ title or metadata.title }}">
+		<meta property="og:description" content="{{ description or metadata.description }}">
+		<meta property="og:image" content="{{ cover or metadata.cover }}"/>
+		<meta property="og:url" content="{{ "{ page.url }" | escape }}">
+		<meta property="og:type" content="article">
+
+		{#- Twitter #}
+		<meta name="twitter:title" content="{{ title or metadata.title }}">
+		<meta name="twitter:description" content="{{ description or metadata.description }}">
+		<meta name="twitter:image" content="{{ cover or metadata.cover }}">
+		<meta property="twitter:url" content="{{ "{ page.url }" | escape }}">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@GershomCharig">
+		<meta name="twitter:creator" content="@GershomCharig">
+
 		{# Favicon #}
 		<link rel="icon" type="image/png" href="/img/favicon.png" />
     <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
