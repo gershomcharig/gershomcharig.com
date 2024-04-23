@@ -14,7 +14,7 @@ numberOfLatestPostsToShow: 3
 		Before becoming head of design and a founding member at <a href="https://www.pactio.io/" target="_blank">Pactio</a>, I was part of <a href="https://www.palantir.com/" target="_blank">Palantir</a>'s business development team, where I contributed to the launch of 29 new commercial initiatives. So far, I've been the founding designer of five different startups.
 	</p>
 	<p>
-		Outside of my daily job, I offer advice to founders who need help with their MVP or product strategy. I also <a href="/blog/"> write</a> about design, technology and other interesting things.
+		Outside of my daily job, I offer advice to founders who need help with their MVP or product strategy.
 	</p>
 	<h3>Contacts</h3>
 	<ul>
@@ -23,21 +23,6 @@ numberOfLatestPostsToShow: 3
 		<li>Instagram: <a href="https://www.instagram.com/gershomcharig/" target="_blank">@gershomcharig</a></li>
 		<li>LinkedIn: <a href="https://www.linkedin.com/in/gershomcharig/" target="_blank">@gershomcharig</a></li>
 	</ul>
-</section>
-
-<section class="home-section">
-	{% set postsCount = collections.posts | length %}
-	{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-	<h1>Recent posts</h1>
-
-	{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
-	{% set postslistCounter = postsCount %}
-	{% include "postslist.njk" %}
-
-	{% set morePosts = postsCount - numberOfLatestPostsToShow %}
-	{% if morePosts > 0 %}
-	<p><a href="/blog/">See all posts →</a></p>
-	{% endif %}
 </section>
 
 <section class="home-section">
