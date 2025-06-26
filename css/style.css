@@ -1,7 +1,6 @@
 :root {
-  --gutter-size: 16px; /* or any value you want */
+  --gutter-size: 16px;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +8,8 @@
   list-style-type: none
 }
 body {
-  font-family: Arial, sans-serif;
-  background: #fafafa;
+  font-family: sans-serif;
+  background: #ffffff;
   color: #222;
 }
 h1 {
@@ -36,19 +35,21 @@ h1 {
   flex-shrink: 0;
 }
 .main-content {
-  flex: 1 1 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
   overflow-y: auto;
   height: 100vh;
   padding: 32px;
-  box-sizing: border-box;
 }
 .grid {
   display: block;
-  margin: 0 auto;
 }
 .grid-sizer,
 .grid-item {
   width: calc((100% - var(--gutter-size) * 4) / 5);
+}
+.grid-item {
   margin-bottom: var(--gutter-size);
 }
 .grid-item img {
