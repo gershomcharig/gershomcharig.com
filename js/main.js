@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     imagesLoaded(grid, function() {
       new Masonry(grid, {
         itemSelector: '.grid-item',
-        columnWidth: '.grid-item',
+        columnWidth: '.grid-sizer',
         gutter: 16,
         percentPosition: true
       });
