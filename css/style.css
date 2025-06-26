@@ -1,3 +1,7 @@
+:root {
+  --gutter-size: 16px; /* or any value you want */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -35,19 +39,17 @@ h1 {
   flex: 1 1 0;
   overflow-y: auto;
   height: 100vh;
-  padding: 32px 24px;
+  padding: 32px;
   box-sizing: border-box;
 }
 .grid {
   display: block;
-  /* max-width: 1200px; */
   margin: 0 auto;
 }
 .grid-sizer,
 .grid-item {
-  width: 20%;
-  margin-bottom: 16px;
-  /* float: left; */
+  width: calc((100% - var(--gutter-size) * 4) / 5);
+  margin-bottom: var(--gutter-size);
 }
 .grid-item img {
   width: 100%;
