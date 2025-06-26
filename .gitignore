@@ -1,5 +1,0 @@
-_site/
-package-lock.json
-.cache
-.DS_Store
-**/node_modules/**
