@@ -47,7 +47,7 @@ h1 {
 }
 .grid-sizer,
 .grid-item {
-  width: calc((100% - var(--gutter-size) * 4) / 5);
+  width: calc((100% - var(--gutter-size) * 2) / 3);
 }
 .grid-item {
   margin-bottom: var(--gutter-size);
@@ -56,4 +56,18 @@ h1 {
   width: 100%;
   display: block;
   border-radius: 8px;
+}
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  .header {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+  .main-content {
+    padding: 24px 8px;
+    overflow-y: visible;
+  }
 } 
