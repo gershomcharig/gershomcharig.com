@@ -29,10 +29,13 @@ body {
 }
 .grid {
   display: block;
+  /* for container queries */
+  container-type: inline-size;
+  container-name: grid-container;
 }
 .grid-sizer,
 .grid-item {
-  width: 100%;
+  width: 100%; /* 1 column */
 }
 .grid-item {
   margin-bottom: var(--gutter-size);
@@ -64,8 +67,16 @@ body {
     overflow-y: auto;
     height: 100vh;
   }
+}
+@container grid-container (min-width: 624px) {
   .grid-sizer,
   .grid-item {
-    width: calc((100% - var(--gutter-size) * 2) / 3);
+    width: calc((100% - var(--gutter-size)) / 2); /* 2 columns */
+  }
+}
+@container grid-container (min-width: 948px) {
+  .grid-sizer,
+  .grid-item {
+    width: calc((100% - var(--gutter-size) * 2) / 3); /* 3 columns */
   }
 } 
