@@ -38,12 +38,22 @@ body {
   width: 100%; /* 1 column */
 }
 .grid-item {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
   margin-bottom: var(--gutter-size);
+}
+.grid-item::after { /* for inner border */
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  pointer-events: none;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.1) inset;
 }
 .grid-item img {
   width: 100%;
   display: block;
-  border-radius: 8px;
 }
 @media (min-width: 901px) {
   :root {
