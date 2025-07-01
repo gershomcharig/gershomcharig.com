@@ -3,6 +3,8 @@
 :root {
   --gutter-size: 24px;
   --padding: min(6vw, 48px);
+  --primary-text: #333;
+  --secondary-text: #666;
 }
 
 * {
@@ -21,7 +23,7 @@ body {
 body {
   font-family: 'Inter', sans-serif;
   background: #ffffff;
-  color: #333;
+  color: var(--primary-text);
 }
 
 /* =========================
@@ -35,7 +37,7 @@ body {
 
 .header {
   width: 100%;
-  background: #eeeeee;
+  /* background: #eeeeee; */
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -142,4 +144,13 @@ p {
   font-size: 16px;
   line-height: 1.4;
   letter-spacing: -0.01em;
+}
+
+.secondary-text {
+  color: var(--secondary-text);
+}
+
+ul, ol {
+  list-style-type: none;
+  padding-left: 0;
 }
