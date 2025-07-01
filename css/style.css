@@ -2,25 +2,37 @@
 
 :root {
   --gutter-size: 24px;
-  --padding: min(6vw,48px);
+  --padding: min(6vw, 48px);
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   font-family: 'Inter', sans-serif;
-  -webkit-font-smoothing: antialiased;
   background: #ffffff;
   color: #333;
 }
+
+/* =========================
+   Layout Containers
+   ========================= */
 .container {
   display: flex;
   flex-direction: column;
   gap: var(--padding);
 }
+
 .header {
   width: 100%;
   background: #eeeeee;
@@ -29,42 +41,18 @@ body {
   gap: 24px;
   padding: var(--padding) var(--padding) 0 var(--padding);
 }
+
 .main-content {
   padding: 0 var(--padding) var(--padding) var(--padding);
   flex: 1 1 0;
 }
-.grid {
-  display: block;
-  /* for container queries */
-  container-type: inline-size;
-  container-name: grid-container;
-}
-.grid-sizer, .grid-item {
-  width: 100%; /* 1 column */
-}
-.grid-item {
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-  margin-bottom: var(--gutter-size);
-}
-.grid-item::after { /* for inner border */
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 12px;
-  pointer-events: none;
-  box-shadow: 0 0 0 1px rgba(0,0,0,0.1) inset;
-}
-.grid-item img {
-  width: 100%;
-  display: block;
-}
+
 @media (min-width: 901px) {
   .container {
     flex-direction: row;
     height: 100vh;
   }
+
   .header {
     width: 25%;
     min-width: 400px;
@@ -75,31 +63,83 @@ body {
     flex-shrink: 0;
     padding: var(--padding) 0 var(--padding) var(--padding);
   }
+
   .main-content {
     overflow-y: auto;
     height: 100vh;
     padding: var(--padding) var(--padding) var(--padding) 0;
   }
 }
+
+/* =========================
+   Gallery Grid
+   ========================= */
+.grid {
+  display: block;
+  /* for container queries */
+  container-type: inline-size;
+  container-name: grid-container;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 100%;
+  /* 1 column */
+}
+
+.grid-item {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: var(--gutter-size);
+}
+
+.grid-item::after {
+  /* for inner border */
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  pointer-events: none;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+}
+
+.grid-item img {
+  width: 100%;
+  display: block;
+}
+
 @container grid-container (min-width: 624px) {
-  .grid-sizer, .grid-item {
-    width: calc((100% - var(--gutter-size)) / 2); /* 2 columns */
+
+  .grid-sizer,
+  .grid-item {
+    width: calc((100% - var(--gutter-size)) / 2);
+    /* 2 columns */
   }
 }
+
 @container grid-container (min-width: 948px) {
-  .grid-sizer, .grid-item {
-    width: calc((100% - var(--gutter-size) * 2) / 3); /* 3 columns */
+
+  .grid-sizer,
+  .grid-item {
+    width: calc((100% - var(--gutter-size) * 2) / 3);
+    /* 3 columns */
   }
 }
+
+/* =========================
+   Typography
+   ========================= */
 h1 {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.4;
   letter-spacing: -0.02em;
 }
+
 p {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
   letter-spacing: -0.01em;
 }
