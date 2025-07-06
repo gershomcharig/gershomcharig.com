@@ -10,11 +10,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const gutter = parseInt(gutterSize);
 
     imagesLoaded(grid, function() {
-      new Masonry(grid, {
+      var msnry = new Masonry(grid, {
         itemSelector: '.grid-item',
         columnWidth: '.grid-sizer',
         gutter: gutter,
         percentPosition: true
+      });
+      
+      // Tell Lazysizes to recalculate after Masonry layout changes
+      msnry.on('layoutComplete', function() {
+        lazysizes.trigger();
       });
     });
   }

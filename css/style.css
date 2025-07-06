@@ -29,6 +29,7 @@ body {
 /* =========================
    Layout Containers
    ========================= */
+
 .container {
   display: flex;
   flex-direction: column;
@@ -82,6 +83,7 @@ body {
 /* =========================
    Gallery Grid
    ========================= */
+
 .grid {
   display: block;
   /* for container queries */
@@ -111,7 +113,7 @@ body {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
 }
 
-.grid-item img {
+.grid-item img, .grid-item video {
   width: 100%;
   display: block;
 }
@@ -133,6 +135,7 @@ body {
 /* =========================
    Typography
    ========================= */
+
 h1 {
   font-weight: 700;
   font-size: 18px;
