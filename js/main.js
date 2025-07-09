@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   var grid = document.querySelector('.grid');
+  var msnry = null;
   if (grid) {
     // Get the gutter value from CSS variable
     const gutterSize = getComputedStyle(document.documentElement)
@@ -10,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const gutter = parseInt(gutterSize);
 
     imagesLoaded(grid, function() {
-      var msnry = new Masonry(grid, {
+      msnry = new Masonry(grid, {
         itemSelector: '.grid-item',
         columnWidth: '.grid-sizer',
         gutter: gutter,
@@ -21,6 +22,13 @@ document.addEventListener('DOMContentLoaded', function() {
       msnry.on('layoutComplete', function() {
         lazysizes.trigger();
       });
+    });
+
+    // Listen for lazyloaded event and trigger Masonry layout
+    document.addEventListener('lazyloaded', function() {
+      if (msnry) {
+        msnry.layout();
+      }
     });
   }
 
