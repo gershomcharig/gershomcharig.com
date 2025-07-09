@@ -1,13 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
   var grid = document.querySelector('.grid');
   var msnry = null;
+
   if (grid) {
     // Get the gutter value from CSS variable
     const gutterSize = getComputedStyle(document.documentElement)
       .getPropertyValue('--gutter-size')
       .trim();
-    
-    // Convert to number (remove 'px' and parse)
     const gutter = parseInt(gutterSize);
 
     imagesLoaded(grid, function() {
@@ -17,15 +16,32 @@ document.addEventListener('DOMContentLoaded', function() {
         gutter: gutter,
         percentPosition: true
       });
-      
-      // Tell Lazysizes to recalculate after Masonry layout changes
+
       msnry.on('layoutComplete', function() {
         lazysizes.trigger();
       });
     });
 
-    // Listen for lazyloaded event and trigger Masonry layout
-    document.addEventListener('lazyloaded', function() {
+    // Debounce function to avoid excessive layout calls
+    function debounce(fn, delay) {
+      let timer = null;
+      return function() {
+        clearTimeout(timer);
+        timer = setTimeout(fn, delay);
+      };
+    }
+
+    // Listen for lazyloaded event on the grid and debounce layout
+    var debouncedLayout = debounce(function() {
+      if (msnry) {
+        msnry.layout();
+      }
+    }, 100);
+
+    grid.addEventListener('lazyloaded', debouncedLayout);
+
+    // As a fallback, trigger a layout after all images are loaded (in case some are missed)
+    window.addEventListener('load', function() {
       if (msnry) {
         msnry.layout();
       }
