@@ -31,10 +31,22 @@ document.addEventListener('DOMContentLoaded', function() {
       };
     }
 
+    // Helper to check if all images in the grid are loaded
+    function allImagesLoaded() {
+      var imgs = grid.querySelectorAll('img');
+      return Array.from(imgs).every(img => img.complete && img.naturalHeight !== 0);
+    }
+
     // Listen for lazyloaded event on the grid and debounce layout
     var debouncedLayout = debounce(function() {
       if (msnry) {
         msnry.layout();
+      }
+      // If all images are loaded, trigger imagesLoaded to ensure final layout
+      if (allImagesLoaded() && msnry) {
+        imagesLoaded(grid, function() {
+          msnry.layout();
+        });
       }
     }, 100);
 
