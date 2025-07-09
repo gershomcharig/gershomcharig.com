@@ -149,12 +149,8 @@ h1 {
 }
 
 h3 {
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 400;
   font-size: var(--text-small);
   line-height: 1.4;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
 }
 
 p {
@@ -166,6 +162,13 @@ p {
 
 .secondary-text {
   color: var(--secondary-text);
+}
+
+.monospace-text {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
 
 ul, ol {
@@ -191,11 +194,8 @@ a {
   text-decoration: none;
 }
 
-/* a:hover {
+a:hover {
+  color: var(--secondary-text);
   text-decoration: underline;
-} */
-
-a:hover::before {
-  content: "→";
-  margin-right: 4px;
+  text-underline-offset: 2px;
 }
