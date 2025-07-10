@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
 
       msnry.on('layoutComplete', function() {
-        lazysizes.trigger();
+        // lazysizes.trigger(); // Removed lazysizes
       });
     });
 
@@ -38,19 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Listen for lazyloaded event on the grid and debounce layout
-    var debouncedLayout = debounce(function() {
-      if (msnry) {
-        msnry.layout();
-      }
-      // If all images are loaded, trigger imagesLoaded to ensure final layout
-      if (allImagesLoaded() && msnry) {
-        imagesLoaded(grid, function() {
-          msnry.layout();
-        });
-      }
-    }, 100);
-
-    grid.addEventListener('lazyloaded', debouncedLayout);
+    // grid.addEventListener('lazyloaded', debouncedLayout); // Removed lazysizes event
 
     // As a fallback, trigger a layout after all images are loaded (in case some are missed)
     window.addEventListener('load', function() {
