@@ -94,8 +94,8 @@ body {
 
 .grid-item {
   position: relative;
-  border-radius: 12px;
   overflow: hidden;
+  border-radius: 12px;
   margin-bottom: var(--gutter-size);
 }
 
@@ -106,13 +106,33 @@ body {
   inset: 0;
   border-radius: 12px;
   pointer-events: none;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08) inset;
 }
 
 .grid-item img, .grid-item video {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.gallery-badge {
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  background: #fff;
+  font-size: 13px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  opacity: 0;
+  transition: opacity ease-in-out .3s;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.grid-item:hover .gallery-badge,
+.grid-item:focus .gallery-badge {
+  opacity: 1;
 }
 
 @container grid-container (min-width: 680px) {
@@ -190,51 +210,4 @@ a:hover {
   color: var(--secondary-text);
   text-decoration: underline;
   text-underline-offset: 2px;
-}
-
-/* GALLERY OVERLAY */
-
-.gallery-overlay-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.gallery-overlay-container img,
-.gallery-overlay-container video {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.gallery-overlay {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 128px; /* Adjust as needed */
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 12px;
-  background: linear-gradient(to top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
-  opacity: 0;
-  transition: opacity ease-in-out .3s;
-  pointer-events: none; /* So clicks go through to the link */
-}
-
-.gallery-overlay-left,
-.gallery-overlay-right {
-  color: #fff;
-  font-size: 13px;
-  font-weight: 600;
-  z-index: 2;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
-}
-
-.grid-item:hover .gallery-overlay,
-.grid-item:focus .gallery-overlay {
-  opacity: 1;
-  pointer-events: auto;
 }
