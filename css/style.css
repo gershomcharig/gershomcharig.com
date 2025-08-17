@@ -165,7 +165,7 @@ h3 {
   line-height: 1.4;
 }
 
-p {
+p, ul, ol {
   font-weight: 500;
   font-size: var(--text-medium);
   line-height: 1.4;
@@ -185,12 +185,6 @@ p {
 
 ul, ol {
   list-style-type: none;
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 400;
-  font-size: var(--text-small);
-  line-height: 1.4;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
 }
 
 li {
