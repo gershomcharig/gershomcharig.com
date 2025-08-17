@@ -7,6 +7,7 @@
   --padding: min(6vw, 48px);
   --primary-text: #333;
   --secondary-text: #666;
+  --accent: #FFCD00;
   --text-medium: clamp(16px, max(16px, calc(16px + 2 * ((100vw - 1600px) / 400))), 18px); /* 16px until 1600px, then scale to 18px */
   --text-small: clamp(14px, max(14px, calc(14px + 2 * ((100vw - 1600px) / 400))), 16px);
 }
@@ -176,6 +177,10 @@ p, ul, ol {
   color: var(--secondary-text);
 }
 
+.accent-text {
+  color: var(--accent);
+}
+
 .monospace-text {
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
@@ -197,11 +202,10 @@ li:last-child {
 
 a {
   color: var(--primary-text);
-  text-decoration: none;
+  text-decoration: underline 2px var(--accent);
+  text-underline-offset: 3px;
 }
 
 a:hover {
-  color: var(--secondary-text);
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  background-color: var(--accent);
 }
