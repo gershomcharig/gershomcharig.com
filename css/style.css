@@ -204,6 +204,7 @@ a {
   color: var(--primary-text);
   text-decoration: underline 2px var(--accent);
   text-underline-offset: 3px;
+  transition: background-color 0.2s ease-out;
 }
 
 a:hover {
