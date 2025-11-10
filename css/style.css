@@ -29,7 +29,14 @@ header {
   & > nav {
     display: inline-flex;
     gap: 24px;
-    background-color: red;
+
+    & > a {
+      font-weight: 600;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 
@@ -40,7 +47,10 @@ section {
 }
 
 #hero {
-  background-color: green;
+  background: url(../img/hero-bg.png);
+  background-size: cover;
+  background-position: center;
+  image-rendering: pixelated;
   height: 100vh;
   display: flex;
   flex-direction: column;
