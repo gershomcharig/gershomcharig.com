@@ -1,212 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
 
 :root {
-  --gutter-size: 24px;
-  --padding: min(6vw, 48px);
-  --primary-text: #333;
-  --secondary-text: #666;
-  --accent: #FFCD00;
-  --text-medium: clamp(16px, max(16px, calc(16px + 2 * ((100vw - 1600px) / 400))), 18px); /* 16px until 1600px, then scale to 18px */
-  --text-small: clamp(14px, max(14px, calc(14px + 2 * ((100vw - 1600px) / 400))), 16px);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-html,
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  background: #ffffff;
-  color: var(--primary-text);
 }
 
 /* =========================
    Layout Containers
    ========================= */
 
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: var(--padding);
+.full-screen {
+  height: 100vh;
+  width: 100vw;
 }
 
-.header {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: var(--padding);
-  padding: var(--padding);
+#hero {
+  background-color: green;
 }
 
-.main-content {
-  padding: 0 var(--padding) var(--padding) var(--padding);
-  flex: 1 1 0;
+#work {
+  background-color: blue;
 }
 
-@media (min-width: 901px) {
-  .container {
-    flex-direction: row;
-    height: 100vh;
-  }
-
-  .header {
-    width: 25%;
-    min-width: 400px;
-    position: sticky;
-    left: 0;
-    top: 0;
-    flex-shrink: 0;
-    padding: var(--padding) 0 var(--padding) var(--padding);
-  }
-
-  .main-content {
-    overflow-y: auto;
-    height: 100vh;
-    padding: var(--padding) var(--padding) var(--padding) 0;
-  }
+#about {
+  background-color: blueviolet;
 }
 
-/* =========================
-   Gallery Grid
-   ========================= */
-
-.grid {
-  display: block;
-  /* for container queries */
-  container-type: inline-size;
-  container-name: grid-container;
+#contact {
+  background-color: brown;
 }
 
-.grid-sizer,
-.grid-item {
-  width: 100%; /* 1 column */
-}
-
-.grid-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-  margin-bottom: var(--gutter-size);
-}
-
-.grid-item::after {
-  /* for inner border */
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 12px;
-  pointer-events: none;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08) inset;
-}
-
-.grid-item img, .grid-item video {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.gallery-badge {
-  position: absolute;
-  left: 8px;
-  bottom: 8px;
-  background: #fff;
-  font-size: 13px;
-  padding: 4px 8px;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  opacity: 0;
-  transition: opacity ease-in-out .3s;
-  pointer-events: none;
-  z-index: 2;
-}
-
-.grid-item:hover .gallery-badge,
-.grid-item:focus .gallery-badge {
-  opacity: 1;
-}
-
-@container grid-container (min-width: 680px) {
-  .grid-sizer,
-  .grid-item {
-    width: calc((100% - var(--gutter-size)) / 2); /* 2 columns */
-  }
-}
-
-@container grid-container (min-width: 1360px) {
-  .grid-sizer,
-  .grid-item {
-    width: calc((100% - var(--gutter-size) * 2) / 3); /* 3 columns */
-  }
-}
-
-/* =========================
-   Typography
-   ========================= */
-
-h1 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.4;
-  letter-spacing: -0.02em;
-}
-
-h3 {
-  font-size: var(--text-small);
-  line-height: 1.4;
-}
-
-p, ul, ol {
-  font-weight: 500;
-  font-size: var(--text-medium);
-  line-height: 1.4;
-  letter-spacing: -0.01em;
-}
-
-.secondary-text {
-  color: var(--secondary-text);
-}
-
-.accent-text {
-  color: var(--accent);
-}
-
-.monospace-text {
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-}
-
-ul, ol {
-  list-style-type: none;
-}
-
-li {
-  margin-bottom: 4px;
-}
-
-li:last-child {
-  margin-bottom: 0;
-}
-
-a {
-  color: var(--primary-text);
-  text-decoration: underline 2px var(--accent);
-  text-underline-offset: 3px;
-  transition: background-color 0.2s ease-out;
-}
-
-a:hover {
-  background-color: var(--accent);
+#footer {
+  background-color: cadetblue;
 }
