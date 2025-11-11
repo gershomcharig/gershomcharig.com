@@ -67,10 +67,6 @@ h2 {
   font-weight: var(--font-semibold);
 }
 
-#work {
-  background-color: blue;
-}
-
 .project {
   display: block;
   aspect-ratio: 3/2;
@@ -92,6 +88,8 @@ h2 {
   background-size: cover;
   background-position: center;
 }
+
+/* Other */
 
 #about {
   background-color: blueviolet;
