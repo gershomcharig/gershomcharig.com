@@ -67,10 +67,28 @@ h2 {
   font-weight: var(--font-semibold);
 }
 
+.rowan-thumbnail {
+  background: url(../img/rowan-cover.webp);
+}
+
+.pactio-thumbnail {
+  background: url(../img/pactio-cover.webp);
+}
+
+.upside-thumbnail {
+  background: url(../img/upside-cover.webp);
+}
+
+.oaknorth-thumbnail {
+  background: url(../img/oaknorth-cover.webp);
+}
+
 .project {
   display: block;
   aspect-ratio: 3/2;
   padding: var(--padding-md);
+  background-size: cover;
+  background-position: center;
 }
 
 .project-title {
@@ -83,17 +101,19 @@ h2 {
   opacity: 0.6;
 }
 
-.rowan-thumbnail {
-  background: url(../img/rowan-cover.webp);
-  background-size: cover;
-  background-position: center;
-}
+
 
 /* Other */
 
 #about {
-  background-color: blueviolet;
   padding: var(--padding-md);
+  display: flex;
+
+  & > * {
+    flex-grow: 1;
+  }
+
+  
 }
 
 #contact {
@@ -101,6 +121,7 @@ h2 {
   padding: var(--padding-md);
 }
 
-#footer {
-  background-color: cadetblue;
+footer {
+  padding-top: 48px;
+  opacity: 0.2;
 }
