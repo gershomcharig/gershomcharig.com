@@ -106,22 +106,25 @@ h2 {
 /* Other */
 
 #about {
-  padding: var(--padding-md);
+  padding: calc(var(--padding-md)*4) var(--padding-md);
+}
+
+.about-content {
+  margin-top: var(--padding-md);
   display: flex;
+  gap: var(--padding-md);
 
   & > * {
-    flex-grow: 1;
+    flex: 1;
+    min-width: 0;
   }
-
-  
 }
 
 #contact {
-  background-color: brown;
-  padding: var(--padding-md);
+  padding: calc(var(--padding-md)*4) var(--padding-md);
 }
 
 footer {
-  padding-top: 48px;
+  padding-top: calc(var(--padding-md)*4);
   opacity: 0.2;
 }
