@@ -2,6 +2,8 @@
 @import 'switzer.css';
 
 :root {
+  --padding-md: 1.5rem;
+  --font-semibold: 600;
 }
 
 html { background-color: #000000; }
@@ -17,6 +19,7 @@ a {
   text-decoration: none;
 }
 
+
 header {
   position: fixed;
   z-index: 10;
@@ -31,7 +34,7 @@ header {
     gap: 24px;
 
     & > a {
-      font-weight: 600;
+      font-weight: var(--font-semibold);
 
       &:hover {
         text-decoration: underline;
@@ -42,9 +45,7 @@ header {
 
 /* HOMEPAGE */
 
-section {
-  padding: 24px;
-}
+/* Hero section */
 
 #hero {
   background: url(../img/hero-bg.png);
@@ -52,14 +53,18 @@ section {
   background-position: center;
   image-rendering: pixelated;
   height: 100vh;
+  padding: var(--padding-md);
   display: flex;
   flex-direction: column;
   justify-content: end;
   gap: 16px;
 }
 
-.big-logotype {
-  width: 100%;
+/* Projects */
+
+h2 {
+  font-size: 32px;
+  font-weight: var(--font-semibold);
 }
 
 #work {
@@ -67,21 +72,35 @@ section {
 }
 
 .project {
-  height: 100vh;
+  display: block;
+  aspect-ratio: 3/2;
+  padding: var(--padding-md);
 }
 
 .project-title {
   position: sticky;
-  top: 80px;
+  top: 68px;
   z-index: 2;
+}
+
+.project-description {
+  opacity: 0.6;
+}
+
+.rowan-thumbnail {
+  background: url(../img/rowan-cover.webp);
+  background-size: cover;
+  background-position: center;
 }
 
 #about {
   background-color: blueviolet;
+  padding: var(--padding-md);
 }
 
 #contact {
   background-color: brown;
+  padding: var(--padding-md);
 }
 
 #footer {
