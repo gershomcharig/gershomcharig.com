@@ -43,7 +43,28 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px var(--padding-md);
+  padding: 16px var(--padding-md) calc(2*var(--padding-md)) var(--padding-md);
+  /* mix-blend-mode: difference; */
+  background:
+    linear-gradient(
+      to bottom,
+      hsla(0, 0%, 0%, 0.9) 0%,
+      hsla(0, 0%, 0%, 0.889) 8.1%,
+      hsla(0, 0%, 0%, 0.856) 15.5%,
+      hsla(0, 0%, 0%, 0.806) 22.5%,
+      hsla(0, 0%, 0%, 0.742) 29%,
+      hsla(0, 0%, 0%, 0.667) 35.3%,
+      hsla(0, 0%, 0%, 0.583) 41.2%,
+      hsla(0, 0%, 0%, 0.495) 47.1%,
+      hsla(0, 0%, 0%, 0.405) 52.9%,
+      hsla(0, 0%, 0%, 0.317) 58.8%,
+      hsla(0, 0%, 0%, 0.233) 64.7%,
+      hsla(0, 0%, 0%, 0.158) 71%,
+      hsla(0, 0%, 0%, 0.094) 77.5%,
+      hsla(0, 0%, 0%, 0.044) 84.5%,
+      hsla(0, 0%, 0%, 0.011) 91.9%,
+      hsla(0, 0%, 0%, 0) 100%
+    );
 
   & > nav {
     display: inline-flex;
@@ -74,15 +95,11 @@ header {
   }
 }
 
-/* HOMEPAGE */
+/* --- HOMEPAGE --- */
 
 /* Hero section */
 
 #hero {
-  /* background: url(../img/hero-bg.png);
-  background-size: cover;
-  background-position: center;
-  image-rendering: pixelated; */
   height: 75vh;
   padding: var(--padding-md);
   display: flex;
