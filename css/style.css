@@ -6,6 +6,12 @@
   --font-semibold: 600;
 }
 
+@media (max-width: 640px) {
+  :root {
+    --padding-md: 1rem;
+  }
+}
+
 html { background-color: #000000; }
 
 body {
@@ -105,14 +111,16 @@ h2 {
 
 /* Other */
 
-#about {
-  padding: calc(var(--padding-md)*4) var(--padding-md);
+#about, #contact {
+  padding: 8vw var(--padding-md);
 }
 
-.about-content {
-  margin-top: var(--padding-md);
+.about-content, .contact-content {
+  margin-top: 4vw;
   display: flex;
-  gap: var(--padding-md);
+  gap: 4vw;
+  font-size: 2.5vw;
+  line-height: 1.4;
 
   & > * {
     flex: 1;
@@ -120,11 +128,11 @@ h2 {
   }
 }
 
-#contact {
-  padding: calc(var(--padding-md)*4) var(--padding-md);
+.contact-links {
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
-  padding-top: calc(var(--padding-md)*4);
-  opacity: 0.2;
+  padding: 8vw var(--padding-md) var(--padding-md) var(--padding-md);
 }
