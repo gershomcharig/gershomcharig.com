@@ -44,9 +44,24 @@ header {
 
     & > a {
       font-weight: var(--font-semibold);
+      position: relative;
 
-      &:hover {
-        text-decoration: underline;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1.5px;
+        background-color: #fff;
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
+      }
+      
+      &:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
       }
     }
   }
@@ -162,6 +177,14 @@ h2 {
 
   @media (max-width: 640px) {
     gap: 2vw;
+  }
+
+  & > a {
+    transition: opacity .2s ease-in-out;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }
 
