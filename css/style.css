@@ -26,6 +26,13 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  outline: none;
+
+  &:focus,
+  &:active {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
 strong {
