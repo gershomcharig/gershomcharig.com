@@ -328,6 +328,12 @@ footer {
 
   & > h1 {
     font-size: 100%;
-    
   }
+}
+
+.project-gallery {
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-md);
+  gap: var(--padding-md);
 }
