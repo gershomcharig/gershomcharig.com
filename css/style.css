@@ -329,10 +329,14 @@ footer {
   }
 }
 
+.featured-image {
+  padding: var(--padding-md) 0;
+}
+
 .project-interlude {
   display: flex;
   gap: 16px;
-  padding: calc(4*var(--padding-md)) var(--padding-md);
+  padding: calc(3*var(--padding-md)) var(--padding-md);
   text-wrap: pretty;
 
   & > * {
@@ -364,6 +368,6 @@ footer {
 .project-gallery {
   display: flex;
   flex-direction: column;
-  padding-inline: var(--padding-md);
+  padding: var(--padding-md);
   gap: var(--padding-md);
 }
