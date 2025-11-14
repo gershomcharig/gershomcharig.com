@@ -29,6 +29,7 @@
   <link rel="icon" type="image/svg+xml" href="/favicon-dark.svg" media="(prefers-color-scheme: dark)" />
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Google analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLSW9SLES6"></script>
   <script>
@@ -42,7 +43,7 @@
 </head>
 
 <body>
-  <header>
+  <header data-aos="slide-down" data-aos-offset="50" data-aos-duration="500">
     <a href="index.html">
       <img src="img/logomark.svg" alt="Gershom Charig">
     </a>
@@ -56,29 +57,37 @@
   <div class="bottom-gradient"></div>
   <main>
     <section class="project-hero">
-      <div class="project-details">
+      <div class="project-details" data-aos="fade-down" data-aos-delay="300">
         <h1>Upside</h1>
         <p>2021</p>
         <p>Upside Technology is a consumer investment app designed to help aspiring investors achieve financial freedom by making more conscious and informed investment decisions.</p>
       </div>
     </section>
-    <img src="img/upside-cover.webp" loading="lazy" alt="Upside" class="featured-image">
-    <section class="project-interlude">
+    <img src="img/upside-cover.webp" loading="lazy" alt="Upside" class="featured-image" data-aos="fade-in" data-aos-delay="600">
+    <section class="project-interlude" data-aos="fade-in" data-aos-delay="600">
       <div></div>
       <div>
         <p>Upside is a consumer investment app built to help new investors make informed financial decisions through clear guidance and accessible tools. The product aimed to simplify investing by translating complex concepts into a mobile experience designed for everyday users rather than professionals.</p>
-        <p>I joined as the founding designer at seed stage, shaping the product’s direction from the ground up. At a pivotal moment, I redefined the vision, shifting it from a professional-grade tool to a retail-focused app and designing an entirely new user experience in under a week — including strategy, personas, and potential business models.</p>
+        <p>I joined as the founding designer at seed stage, shaping the product's direction from the ground up. At a pivotal moment, I redefined the vision, shifting it from a professional-grade tool to a retail-focused app and designing an entirely new user experience in under a week — including strategy, personas, and potential business models.</p>
         <p>Working closely with the executive team, I helped align the product with market needs and took on broader leadership responsibilities, inheriting key product decisions and shaping the long-term UX strategy as the company evolved.</p>
       </div>
     </section>
     <section class="project-gallery">
-      <img src="img/projects/upside-1.webp" loading="lazy" alt="Upside mobile app interface">
-      <img src="img/projects/upside-2.webp" loading="lazy" alt="Upside mobile app interface">
+      <img src="img/projects/upside-1.webp" loading="lazy" alt="Upside mobile app interface" data-aos="fade-in" data-aos-duration="600">
+      <img src="img/projects/upside-2.webp" loading="lazy" alt="Upside mobile app interface" data-aos="fade-in" data-aos-duration="600">
     </section>
   </main>
   <footer class="footer">
     <img src="img/logotype.svg" alt="Gershom Charig" style="width: 100%; opacity: 0.15;">
   </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1500,
+      easing: 'ease-in-out-quart',
+      once: true,
+    });
+  </script>
 </body>
 
 </html>

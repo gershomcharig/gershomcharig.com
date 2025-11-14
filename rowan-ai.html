@@ -29,6 +29,7 @@
   <link rel="icon" type="image/svg+xml" href="/favicon-dark.svg" media="(prefers-color-scheme: dark)" />
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Google analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLSW9SLES6"></script>
   <script>
@@ -42,7 +43,7 @@
 </head>
 
 <body>
-  <header>
+  <header data-aos="slide-down" data-aos-offset="50" data-aos-duration="500">
     <a href="index.html">
       <img src="img/logomark.svg" alt="Gershom Charig">
     </a>
@@ -56,14 +57,14 @@
   <div class="bottom-gradient"></div>
   <main>
     <section class="project-hero">
-      <div class="project-details">
+      <div class="project-details" data-aos="fade-down" data-aos-delay="300">
         <h1>Rowan</h1>
         <p>2025</p>
         <p>Built for accounting and finance teams, Rowan is an AI agent that automates reconciliations, streamlines financial reporting and accelerates client delivery — all within Excel.</p>
       </div>
     </section>
-    <img src="img/rowan-cover.webp" loading="lazy" alt="Rowan AI" class="featured-image">
-    <section class="project-interlude">
+    <img src="img/rowan-cover.webp" loading="lazy" alt="Rowan AI" class="featured-image" data-aos="fade-in" data-aos-delay="600">
+    <section class="project-interlude" data-aos="fade-in" data-aos-delay="600">
       <div></div>
       <div>
         <p>Rowan is an AI agent built directly into Excel, designed for accountants and finance teams. It helps users import and clean data, audit spreadsheets, automate recurring tasks, and get answers in context — all without leaving the workflow they already rely on. The product combines conversational AI with structured, reliable tools that feel native to Excel.</p>
@@ -72,17 +73,25 @@
       </div>
     </section>
     <section class="project-gallery">
-      <img src="img/projects/rowan-logo.svg" alt="Rowan AI logo">
-      <img src="img/projects/rowan-agent.webp" loading="lazy" alt="Rowan AI web interface">
-      <img src="img/projects/rowan-ui-details.webp" loading="lazy" alt="Rowan AI UI components">
-      <video src="img/projects/rowan-animation-compressed.mp4" autoplay loop muted playsinline poster="img/projects/rowan-animation.webp" width="100%" height="auto" alt="Rowan AI logo animations"></video>
-      <img src="img/projects/rowan-concepts.webp" loading="lazy" alt="Rowan AI concepts">
-      <video src="img/projects/pactio-website-button.mp4" autoplay loop muted playsinline poster="img/projects/pactio-website-button.webp" width="100%" height="auto" alt="Detail of website animation"></video>
+      <img src="img/projects/rowan-logo.svg" alt="Rowan AI logo" data-aos="fade-in" data-aos-duration="600">
+      <img src="img/projects/rowan-agent.webp" loading="lazy" alt="Rowan AI web interface" data-aos="fade-in" data-aos-duration="600">
+      <img src="img/projects/rowan-ui-details.webp" loading="lazy" alt="Rowan AI UI components" data-aos="fade-in" data-aos-duration="600">
+      <video src="img/projects/rowan-animation-compressed.mp4" autoplay loop muted playsinline poster="img/projects/rowan-animation.webp" width="100%" height="auto" alt="Rowan AI logo animations" data-aos="fade-in" data-aos-duration="600"></video>
+      <img src="img/projects/rowan-concepts.webp" loading="lazy" alt="Rowan AI concepts" data-aos="fade-in" data-aos-duration="600">
+      <video src="img/projects/pactio-website-button.mp4" autoplay loop muted playsinline poster="img/projects/pactio-website-button.webp" width="100%" height="auto" alt="Detail of website animation" data-aos="fade-in" data-aos-duration="600"></video>
     </section>
   </main>
   <footer class="footer">
     <img src="img/logotype.svg" alt="Gershom Charig" style="width: 100%; opacity: 0.15;">
   </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1500,
+      easing: 'ease-in-out-quart',
+      once: true,
+    });
+  </script>
 </body>
 
 </html>

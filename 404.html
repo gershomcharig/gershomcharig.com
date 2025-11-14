@@ -29,6 +29,7 @@
   <link rel="icon" type="image/svg+xml" href="/favicon-dark.svg" media="(prefers-color-scheme: dark)" />
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Google analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLSW9SLES6"></script>
   <script>
@@ -42,7 +43,7 @@
 </head>
 
 <body>
-  <header>
+  <header data-aos="slide-down" data-aos-offset="50" data-aos-duration="500">
     <a href="index.html">
       <img src="img/logomark.svg" alt="Gershom Charig">
     </a>
@@ -61,6 +62,14 @@
   <footer class="footer">
     <img src="img/logotype.svg" alt="Gershom Charig" style="width: 100%; opacity: 0.15;">
   </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1500,
+      easing: 'ease-in-out-quart',
+      once: true,
+    });
+  </script>
 </body>
 
 </html>

@@ -276,6 +276,11 @@ h2 {
 
 footer {
   padding: 16vw var(--padding-md) var(--padding-md) var(--padding-md);
+
+  & > img {
+    opacity: 0.1;
+    
+  }
 }
 
 /* =========================

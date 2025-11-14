@@ -29,6 +29,7 @@
   <link rel="icon" type="image/svg+xml" href="/favicon-dark.svg" media="(prefers-color-scheme: dark)" />
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Google analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLSW9SLES6"></script>
   <script>
@@ -42,7 +43,7 @@
 </head>
 
 <body>
-  <header>
+  <header data-aos="slide-down" data-aos-offset="50" data-aos-duration="500">
     <a href="index.html">
       <img src="img/logomark.svg" alt="Gershom Charig">
     </a>
@@ -56,31 +57,39 @@
   <div class="bottom-gradient"></div>
   <main>
     <section class="project-hero">
-      <div class="project-details">
+      <div class="project-details" data-aos="fade-down" data-aos-delay="300">
         <h1>OakNorth</h1>
         <p>2019 — 2021</p>
         <p>A platform that assists financial institutions with data-driven solutions for credit analysis and monitoring.</p>
       </div>
     </section>
-    <img src="img/oaknorth-cover.webp" loading="lazy" alt="OakNorth" class="featured-image">
-    <section class="project-interlude">
+    <img src="img/oaknorth-cover.webp" loading="lazy" alt="OakNorth" class="featured-image" data-aos="fade-in" data-aos-delay="600">
+    <section class="project-interlude" data-aos="fade-in" data-aos-delay="600">
       <div></div>
       <div>
         <p>OakNorth builds credit intelligence tools that help financial institutions assess risk, monitor portfolios, and make faster, more informed lending decisions. The platform combines data, analytics, and automation to support commercial lenders in a rapidly changing market.</p>
-        <p>I joined as the first design hire, responsible for delivering the initial version of the credit intelligence platform and establishing the company’s design function. I later scaled the team to four designers and introduced a structured design practice to support increasingly complex products and workflows.</p>
-        <p>As design lead across two cross-functional teams, I collaborated closely with engineers, data scientists, and product managers to define and validate the end-to-end user experience. My work played a key role in scaling the platform during OakNorth’s hyper-growth phase, as the company expanded its customer base and product capabilities following a $440M funding round.</p>
+        <p>I joined as the first design hire, responsible for delivering the initial version of the credit intelligence platform and establishing the company's design function. I later scaled the team to four designers and introduced a structured design practice to support increasingly complex products and workflows.</p>
+        <p>As design lead across two cross-functional teams, I collaborated closely with engineers, data scientists, and product managers to define and validate the end-to-end user experience. My work played a key role in scaling the platform during OakNorth's hyper-growth phase, as the company expanded its customer base and product capabilities following a $440M funding round.</p>
       </div>
     </section>
     <section class="project-gallery">
-      <img src="img/projects/oaknorth-dashboard.webp" loading="lazy" alt="Oaknorth web interface">
-      <video src="img/projects/oaknorth-diagram-compressed.mp4" autoplay loop muted playsinline poster="img/projects/oaknorth-diagram.webp" width="100%" height="auto" alt="Oaknorth web interface video"></video>
-      <img src="img/projects/oaknorth-peer-analysis.webp" loading="lazy" alt="Oaknorth web interface">
-      <img src="img/projects/oaknorth-location-analysis.webp" loading="lazy" alt="Oaknorth web interface">
+      <img src="img/projects/oaknorth-dashboard.webp" loading="lazy" alt="Oaknorth web interface" data-aos="fade-in" data-aos-duration="600">
+      <video src="img/projects/oaknorth-diagram-compressed.mp4" autoplay loop muted playsinline poster="img/projects/oaknorth-diagram.webp" width="100%" height="auto" alt="Oaknorth web interface video" data-aos="fade-in" data-aos-duration="600"></video>
+      <img src="img/projects/oaknorth-peer-analysis.webp" loading="lazy" alt="Oaknorth web interface" data-aos="fade-in" data-aos-duration="600">
+      <img src="img/projects/oaknorth-location-analysis.webp" loading="lazy" alt="Oaknorth web interface" data-aos="fade-in" data-aos-duration="600">
     </section>
   </main>
   <footer class="footer">
     <img src="img/logotype.svg" alt="Gershom Charig" style="width: 100%; opacity: 0.15;">
   </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1500,
+      easing: 'ease-in-out-quart',
+      once: true,
+    });
+  </script>
 </body>
 
 </html>
