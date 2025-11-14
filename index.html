@@ -5,33 +5,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gershom Charig - Founding Designer</title>
-  <meta name="description" content="5x Founding Designer • Ex Palantir • Head of Design @ Pactio • 0→1 AI Specialist" />
+  <meta name="description" content="5x founding designer with 16 years experience. Built and scaled 0→1 products that raised $500m+ in total funding." />
   <meta name="author" content="Gershom Charig" />
   <!-- Open graph -->
   <meta property="og:title" content="Gershom Charig - Founding Designer" />
-  <meta property="og:description" content="5x Founding Designer • Ex Palantir • Head of Design @ Pactio • 0→1 AI Specialist" />
-  <meta property="og:image" content="http://www.gershomcharig.com/img/open-graph.png" />
-  <meta property="og:url" content="http://www.gershomcharig.com/" />
+  <meta property="og:description" content="5x founding designer with 16 years experience. Built and scaled 0→1 products that raised $500m+ in total funding." />
+  <meta property="og:image" content="https://www.gershomcharig.com/img/open-graph.png" />
+  <meta property="og:url" content="https://www.gershomcharig.com/" />
   <meta property="og:type" content="website" />
   <!-- Twitter -->
   <meta name="twitter:title" content="Gershom Charig - Founding Designer" />
-  <meta name="twitter:description" content="5x Founding Designer • Ex Palantir • Head of Design @ Pactio • 0→1 AI Specialist" />
-  <meta name="twitter:image" content="http://www.gershomcharig.com/img/open-graph.png" />
-  <meta property="twitter:url" content="http://www.gershomcharig.com/" />
+  <meta name="twitter:description" content="5x founding designer with 16 years experience. Built and scaled 0→1 products that raised $500m+ in total funding." />
+  <meta name="twitter:image" content="https://www.gershomcharig.com/img/open-graph.png" />
+  <meta property="twitter:url" content="https://www.gershomcharig.com/" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@GershomCharig" />
   <meta name="twitter:creator" content="@GershomCharig" />
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" href="/favicon.png" media="(prefers-color-scheme: light)" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" media="(prefers-color-scheme: light)" />
+  <link rel="icon" type="image/png" href="/favicon-dark.png" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" type="image/svg+xml" href="/favicon-dark.svg" media="(prefers-color-scheme: dark)" />
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <!-- JS Libraries -->
-  <script src="js/main.js"></script>
-  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Google analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLSW9SLES6"></script>
   <script>
@@ -45,182 +42,89 @@
 </head>
 
 <body>
-  <div class="container">
-    <header class="header">
-      <div class="animate__animated animate__fadeIn" style="display: flex; flex-direction: row; gap: 12px; align-items: center; animation-delay: 0.2s;">
-        <img src="img/profile-pic.svg" alt="Gershom Charig" width="56" height="56">
-        <div style="display: flex; flex-direction: column;">
-          <h1>Gershom Charig</h1>
-          <p class="secondary-text" style="font-size: 14px;">Founding Designer</p>
+  <header data-aos="slide-down" data-aos-offset="50" data-aos-duration="500">
+    <a href="index.html">
+      <img src="img/logomark.svg" alt="Gershom Charig">
+    </a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <div class="bottom-gradient"></div>
+  <main>
+    <section class="hero">
+      <h1 style="display: none;">Gershom Charig</h1>
+      <p style="display: none;">5x founding designer. 16+ years experience. $500M+ total funding raised.</p>
+      <picture data-aos="fade-down" data-aos-delay="300">
+        <source media="(max-width: 640px)" srcset="img/logotype-mobile.svg">
+        <img src="img/logotype.svg" alt="Gershom Charig">
+      </picture>
+    </section>
+    <section class="featured-projects" data-aos="fade-in" data-aos-delay="600">
+      <a id="work" class="project rowan-thumbnail" href="rowan-ai.html">
+        <div class="project-title">
+          <h2>Rowan</h2>
+          <p class="project-description">AI agent for accountants</p>
+        </div>
+      </a>
+      <a class="project pactio-thumbnail" href="pactio.html">
+        <div class="project-title">
+          <h2>Pactio</h2>
+          <p class="project-description">Digital architecture for private equity</p>
+        </div>
+      </a>
+      <a class="project upside-thumbnail" href="upside.html">
+        <div class="project-title">
+          <h2>Upside</h2>
+          <p class="project-description">Trading insights & portfolio manager</p>
+        </div>
+      </a>
+      <a class="project oaknorth-thumbnail" href="oaknorth.html">
+        <div class="project-title">
+          <h2>OakNorth</h2>
+          <p class="project-description">Credit analysis and monitoring platform</p>
+        </div>
+      </a>
+    </section>
+    <section id="about">
+      <h2 style="display: none;">About Gershom</h2>
+      <img src="img/about-gershom.svg" alt="About Gershom" data-aos="fade-down">
+      <div class="about-content">
+        <div data-aos="fade" data-aos-delay="300">
+          <p>Gershom Charig is a design leader with over <strong>16 years of experience</strong>.</p>
+          <p>He’s been the <strong>founding designer of five startups</strong>, where he’s built and scaled zero-to-one products that raised over <strong>$500m in total funding.</strong></p>
+          <p>As a design generalist with strong business acumen, his approach blends strategic thinking with rapid execution.</p>
+          <p>He specialises in high-stakes initiatives, turning complex systems into intuitive experiences that users love and that deliver <strong>real business impact.</strong></p>
+        </div>
+        <img src="img/profile-pic.webp" alt="Gershom Charig’s profile picture" data-aos="fade" data-aos-delay="600">
+      </div>
+    </section>
+    <section id="contact">
+      <h2 style="display: none;">Let’s Connect</h2>
+      <img src="img/lets-connect.svg" alt="Let’s Connect" data-aos="fade-down">
+      <div class="contact-content">
+        <p data-aos="fade" data-aos-delay="300">If you ever find yourself in London, let’s grab a coffee together. ☕</p>
+        <div class="contact-links" data-aos="fade" data-aos-delay="600">
+          <a href="mailto:hello@gershomcharig.com" target="_blank" rel="noopener noreferrer">Email ↗</a>
+          <a href="https://www.linkedin.com/in/gershomcharig/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="https://x.com/gershomcharig" target="_blank" rel="noopener noreferrer">X ↗</a>
+          <a href="https://www.instagram.com/gershomcharig/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
         </div>
       </div>
-      <div class="animate__animated animate__fadeIn" style="display: flex; flex-direction: column; gap: 8px; flex-grow: 1; animation-delay: 0.4s;">
-        <p style="font-weight: 600;">Five&#8209;time Founding Designer with 16+ years of experience building 0&#8209;to&#8209;1 products in fast&#8209;growing startups.</p>
-        <p class="secondary-text">I help teams navigate early&#8209;stage chaos with clarity and speed, deliver software that customers love, and secure funding.</p>
-        <p class="secondary-text">Currently Head of Design at Pactio, where I’m building an AI agent for accountants called Rowan. Previously, I was at Palantir, where I helped launch over two dozen commercial initiatives across Europe and the US.</p>
-        <ul>
-          <li>→ <a href="https://tinyurl.com/gershomcharig" target="_blank">Check out my portfolio</a></li>
-        </ul>
-      </div>
-      <div class="animate__animated animate__fadeIn" style="display: flex; flex-direction: column; gap: 8px; animation-delay: 0.6s;">
-        <ul>
-          <li>→ <a href="mailto:hello@gershomcharig.com">Email</a></li>
-          <li>→ <a href="https://www.linkedin.com/in/gershomcharig/" target="_blank">LinkedIn</a></li>
-          <li>→ <a href="https://x.com/gershomcharig" target="_blank">Twitter (X)</a></li>
-        </ul>
-      </div>
-    </header>
-    <main class="main-content">
-      <div class="grid animate__animated animate__fadeIn" style="animation-delay: 0.6s;">
-        <div class="grid-sizer"></div><!-- width of .grid-sizer used for columnWidth -->
-        <a href="img/rowan-agent.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/rowan-agent.webp" loading="lazy" alt="Rowan AI web interface">
-          <span class="gallery-badge">Rowan AI</span>
-        </a>
-        <a href="img/rowan-logo.svg" data-gallery="gallery" class="grid-item">
-          <img src="img/rowan-logo.svg" alt="Rowan AI logo">
-          <span class="gallery-badge">Rowan AI</span>
-        </a>
-        <a href="img/rowan-ui-details.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/rowan-ui-details.webp" loading="lazy" alt="Rowan AI UI components">
-          <span class="gallery-badge">Rowan AI</span>
-        </a>
-        <a href="img/rowan-concepts.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/rowan-concepts.webp" loading="lazy" alt="Rowan AI concepts">
-          <span class="gallery-badge">Rowan AI</span>
-        </a>
-        <a href="img/rowan-animation-compressed.mp4" data-gallery="gallery" class="grid-item">
-          <video class="lazy-video" data-src="img/rowan-animation-compressed.mp4" autoplay loop muted playsinline poster="img/rowan-animation.webp" width="100%" height="auto" alt="Rowan AI logo animations"></video>
-          <span class="gallery-badge">Rowan AI</span>
-        </a>
-        <a href="img/pactio-website-button.mp4" data-gallery="gallery" class="grid-item">
-          <video class="lazy-video" data-src="img/pactio-website-button.mp4" autoplay loop muted playsinline poster="img/pactio-website-button.webp" width="100%" height="auto" alt="Detail of website animation"></video>
-          <span class="gallery-badge">Rowan AI</span>
-        </a>
-        <a href="img/pactio-ui-details.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/pactio-ui-details.webp" loading="lazy" alt="Pactio UI components">
-          <span class="gallery-badge">Pactio</span>
-        </a>
-        <a href="img/pactio-architecture.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/pactio-architecture.webp" loading="lazy" alt="Pactio graphic element">
-          <span class="gallery-badge">Pactio</span>
-        </a>
-        <a href="img/pactio-gp-webapp.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/pactio-gp-webapp.webp" loading="lazy" alt="Pactio web interface">
-          <span class="gallery-badge">Pactio</span>
-        </a>
-        <a href="img/pactio-gp-webapp-2.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/pactio-gp-webapp-2.webp" loading="lazy" alt="Pactio web interface">
-          <span class="gallery-badge">Pactio</span>
-        </a>
-        <a href="img/pactio-manage-video-compressed.mp4" data-gallery="gallery" class="grid-item">
-          <video class="lazy-video" data-src="img/pactio-manage-video-compressed.mp4" autoplay loop muted playsinline poster="img/pactio-manage-video.webp" width="100%" height="auto" alt="Pactio prototype video"></video>
-          <span class="gallery-badge">Pactio</span>
-        </a>
-        <a href="img/pactio-sources-uses.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/pactio-sources-uses.webp" loading="lazy" alt="Pactio web interface">
-          <span class="gallery-badge">Pactio</span>
-        </a>
-        <a href="img/pactio-captable.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/pactio-captable.webp" loading="lazy" alt="Pactio web interface">
-          <span class="gallery-badge">Pactio</span>
-        </a>
-        <a href="img/pactio-exchange-modal.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/pactio-exchange-modal.webp" loading="lazy" alt="Pactio web interface">
-          <span class="gallery-badge">Pactio</span>
-        </a>
-        <a href="img/pactio-connections.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/pactio-connections.webp" loading="lazy" alt="Pactio graphic element">
-          <span class="gallery-badge">Pactio</span>
-        </a>
-        <a href="img/pactio-time-machine.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/pactio-time-machine.webp" loading="lazy" alt="Pactio web interface">
-          <span class="gallery-badge">Pactio</span>
-        </a>
-        <a href="img/upside-1.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/upside-1.webp" loading="lazy" alt="Upside mobile app interface">
-          <span class="gallery-badge">Upside</span>
-        </a>
-        <a href="img/upside-2.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/upside-2.webp" loading="lazy" alt="Upside mobile app interface">
-          <span class="gallery-badge">Upside</span>
-        </a>
-        <a href="img/notebook-compressed.mp4" data-gallery="gallery" class="grid-item">
-          <video class="lazy-video" data-src="img/notebook-compressed.mp4" autoplay loop muted playsinline poster="img/notebook.webp" width="100%" height="auto" alt="UI sketches in my notebook"></video>
-        </a>
-        <a href="img/oaknorth-dashboard.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/oaknorth-dashboard.webp" loading="lazy" alt="Oaknorth web interface">
-          <span class="gallery-badge">OakNorth</span>
-        </a>
-        <a href="img/oaknorth-diagram-compressed.mp4" data-gallery="gallery" class="grid-item">
-          <video class="lazy-video" data-src="img/oaknorth-diagram-compressed.mp4" autoplay loop muted playsinline poster="img/oaknorth-diagram.webp" width="100%" height="auto" alt="Oaknorth web interface video"></video>
-          <span class="gallery-badge">OakNorth</span>
-        </a>
-        <a href="img/oaknorth-peer-analysis.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/oaknorth-peer-analysis.webp" loading="lazy" alt="Oaknorth web interface">
-          <span class="gallery-badge">OakNorth</span>
-        </a>
-        <a href="img/oaknorth-location-analysis.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/oaknorth-location-analysis.webp" loading="lazy" alt="Oaknorth web interface">
-          <span class="gallery-badge">OakNorth</span>
-        </a>
-        <a href="img/credimi-logo.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/credimi-logo.webp" loading="lazy" alt="Credimi logo">
-          <span class="gallery-badge">Credimi</span>
-        </a>
-        <a href="img/credimi-dashboard.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/credimi-dashboard.webp" loading="lazy" alt="Credimi web interface">
-          <span class="gallery-badge">Credimi</span>
-        </a>
-        <a href="img/credimi-website.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/credimi-website.webp" loading="lazy" alt="Credimi website">
-          <span class="gallery-badge">Credimi</span>
-        </a>
-        <a href="img/instapartners-website.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/instapartners-website.webp" loading="lazy" alt="Instapartners website">
-          <span class="gallery-badge">Credimi</span>
-        </a>
-        <a href="img/gc-logo.svg" data-gallery="gallery" class="grid-item">
-          <img src="img/gc-logo.svg" alt="Old version of my personal logo">
-        </a>
-        <a href="img/moneyfarm-ios.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/moneyfarm-ios.webp" loading="lazy" alt="MoneyFarm mobile app interface">
-          <span class="gallery-badge">MoneyFarm</span>
-        </a>
-        <a href="img/moneyfarm-ios-collage.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/moneyfarm-ios-collage.webp" loading="lazy" alt="MoneyFarm mobile app interface">
-          <span class="gallery-badge">MoneyFarm</span>
-        </a>
-        <a href="img/moneyfarm-webapp.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/moneyfarm-webapp.webp" loading="lazy" alt="MoneyFarm web app interface">
-          <span class="gallery-badge">MoneyFarm</span>
-        </a>
-        <a href="img/moneyfarm-website.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/moneyfarm-website.webp" loading="lazy" alt="MoneyFarm website">
-          <span class="gallery-badge">MoneyFarm</span>
-        </a>
-        <a href="img/budjet-reports.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/budjet-reports.webp" loading="lazy" alt="BudJet mobile app interface">
-          <span class="gallery-badge">BudJet</span>
-        </a>
-        <a href="img/budjet-apple-watch.webp" data-gallery="gallery" class="grid-item">
-          <img src="img/budjet-apple-watch.webp" loading="lazy" alt="BudJet Apple Watch interface">
-          <span class="gallery-badge">BudJet</span>
-        </a>
-      </div>
-    </main>
-  </div>
-  <!-- Glightbox JS -->
-  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    </section>
+  </main>
+  <footer class="footer">
+    <img src="img/logotype.svg" alt="Gershom Charig">
+  </footer>
+  <script src="js/featured-projects.js" defer></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    const lightbox = GLightbox({
-      selector: '[data-gallery="gallery"]',
-      touchNavigation: true,
-      loop: false,
-      autoplayVideos: true,
-      closeButton: true,
-      zoomable: true,
-      draggable: true,
+    AOS.init({
+      duration: 1500,
+      easing: 'ease-in-out-quart',
+      once: true,
     });
   </script>
 </body>
