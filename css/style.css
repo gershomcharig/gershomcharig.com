@@ -227,6 +227,9 @@ h2 {
 
 #about, #contact {
   padding: 16vw var(--padding-md) 0 var(--padding-md);
+  @media (max-width: 640px) {
+    padding-top: 20vw;
+  }
 }
 
 .about-content, .contact-content {
@@ -275,11 +278,14 @@ h2 {
 }
 
 footer {
-  padding: 16vw var(--padding-md) var(--padding-md) var(--padding-md);
+  padding-top: 16vw;
 
   & > img {
-    opacity: 0.1;
-    
+    opacity: 0.25;
+  }
+
+  @media (max-width: 640px) {
+    padding-top: 20vw;
   }
 }
 
