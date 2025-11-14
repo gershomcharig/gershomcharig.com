@@ -1,5 +1,6 @@
 @import 'reset.css';
 @import 'switzer.css';
+@import 'animate.css';
 
 :root {
   --padding-md: 1.5rem;
