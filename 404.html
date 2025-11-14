@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 - Page not found</title>
+  <title>Page Not Found</title>
+  <meta name="description" content="404 Error - The page you’re looking for isn’t available." />
+  <meta name="author" content="Gershom Charig" />
+  <!-- Open graph -->
+  <meta property="og:title" content="Page Not Found" />
+  <meta property="og:description" content="404 Error - The page you’re looking for isn’t available." />
+  <meta property="og:image" content="http://www.gershomcharig.com/img/open-graph.png" />
+  <meta property="og:url" content="http://www.gershomcharig.com/404.html" />
+  <meta property="og:type" content="website" />
+  <!-- Twitter -->
+  <meta name="twitter:title" content="Page Not Found" />
+  <meta name="twitter:description" content="404 Error - The page you’re looking for isn’t available." />
+  <meta name="twitter:image" content="http://www.gershomcharig.com/img/open-graph.png" />
+  <meta property="twitter:url" content="http://www.gershomcharig.com/404.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@GershomCharig" />
+  <meta name="twitter:creator" content="@GershomCharig" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="icon" type="image/png" href="/favicon.png" media="(prefers-color-scheme: light)" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" media="(prefers-color-scheme: light)" />
+  <link rel="icon" type="image/png" href="/favicon-dark.png" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" type="image/svg+xml" href="/favicon-dark.svg" media="(prefers-color-scheme: dark)" />
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      gap: 12px;
-    }
-  </style>
   <!-- Google analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLSW9SLES6"></script>
   <script>
@@ -27,9 +40,28 @@
     gtag("config", "G-WLSW9SLES6");
   </script>
 </head>
+
 <body>
-  <h1>404</h1>
-  <p>Sorry, the page you were trying to view does not exist.</p>
-  <a class="monospace-text" href="index.html">Go back to the homepage</a>
+  <header>
+    <a href="index.html">
+      <img src="img/logomark.svg" alt="Gershom Charig">
+    </a>
+    <nav>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+  <div class="bottom-gradient"></div>
+  <main class="not-found">
+    <p class="not-found-label">404</p>
+    <h1>That page is off the map</h1>
+    <p>You might have followed an outdated link or typed the URL incorrectly.<br/>Let’s get you back to the <a href="index.html">homepage</a>, or feel free to <a href="mailto:hello@gershomcharig.com" target="_blank" rel="noreferrer noopener">reach out to me</a> directly.</p>
+  </main>
+  <footer class="footer">
+    <img src="img/logotype.svg" alt="Gershom Charig" style="width: 100%; opacity: 0.15;">
+  </footer>
 </body>
-</html> 
+
+</html>
+

@@ -371,3 +371,34 @@ footer {
   padding: var(--padding-md);
   gap: var(--padding-md);
 }
+
+/* =========================
+   404 page
+   ========================= */
+
+.not-found {
+  min-height: 100dvh;
+  padding: var(--padding-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+
+  & > p {
+    color: #777;
+    max-width: 640px;
+  }
+}
+
+.not-found-label {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  color: #777;
+}
+
+.not-found a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+}
