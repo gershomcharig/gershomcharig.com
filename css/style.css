@@ -390,6 +390,18 @@ footer {
   }
 }
 
+.next-project {
+  padding: calc(4*var(--padding-md)) 0;
+
+  & > a {
+    transition: opacity .2s ease-in-out;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
 /* =========================
    404 page
    ========================= */
