@@ -1,3 +1,7 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
@@ -30,4 +34,14 @@
     <priority>0.1</priority>
     <changefreq>yearly</changefreq>
   </url>
+  <url>
+    <loc>{{ site.url }}/notes/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  {% for note in collections.notes %}
+  <url>
+    <loc>{{ site.url }}{{ note.url }}</loc>
+    <lastmod>{{ note.date | dateISO }}</lastmod>
+  </url>
+  {% endfor %}
 </urlset> 

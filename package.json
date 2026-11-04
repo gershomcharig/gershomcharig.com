@@ -1,0 +1,15 @@
+{
+  "name": "gershomcharig.com",
+  "private": true,
+  "scripts": {
+    "prebuild": "node -e \"require('node:fs').rmSync('_site', { recursive: true, force: true })\"",
+    "build": "eleventy",
+    "dev": "eleventy --serve"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}

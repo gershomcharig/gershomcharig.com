@@ -1,0 +1,27 @@
+---
+layout: base.njk
+title: Notes
+permalink: /notes/index.html
+---
+<div class="notes-heading">
+  <h1>Notes</h1>
+  <p>{{ site.description }}</p>
+</div>
+{% if collections.notes.length %}
+<ol class="notes-list">
+  {% for note in collections.notes %}
+  <li>
+    <a href="{{ note.url }}">
+      <time datetime="{{ note.date | dateISO }}">{{ note.date | dateReadable }}</time>
+      <h2>{{ note.data.title | escape }} <span aria-hidden="true">↗</span></h2>
+      {% if note.data.description %}<p>{{ note.data.description | escape }}</p>{% endif %}
+    </a>
+  </li>
+  {% endfor %}
+</ol>
+{% else %}
+<div class="notes-empty">
+  <h2>A space for thinking out loud.</h2>
+  <p>First notes coming soon.</p>
+</div>
+{% endif %}

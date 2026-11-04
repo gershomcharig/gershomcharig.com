@@ -85,6 +85,11 @@ header {
     display: inline-flex;
     gap: 24px;
 
+    @media (max-width: 640px) {
+      gap: 16px;
+      font-size: 14px;
+    }
+
     & > a {
       font-weight: 600;
       position: relative;

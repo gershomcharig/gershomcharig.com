@@ -1,0 +1,12 @@
+---
+layout: base.njk
+---
+<article>
+  <a class="notes-back" href="/notes/">← All notes</a>
+  <div class="note-heading">
+    <time datetime="{{ page.date | dateISO }}">{{ page.date | dateReadable }}</time>
+    <h1>{{ title | escape }}</h1>
+    {% if description %}<p class="note-description">{{ description | escape }}</p>{% endif %}
+  </div>
+  <div class="note-body">{{ content | safe }}</div>
+</article>
